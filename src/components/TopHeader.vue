@@ -2,6 +2,7 @@
 	<div class="top-header">
 		<div class="container">
 			<a href="#" class="icon-mi"></a>
+			<a href="#" class="pic-gif"></a>
 			<div class="header-navs">
 				<ul class="navs">
 					<li v-for="item in navs" class="nav">
@@ -202,6 +203,14 @@ export default {
 	background-size: 100% 100%;
 }
 
+.pic-gif {
+	width: 163px;
+	height: 66px;
+	margin-left: 10px;
+	background: url('../assets/img/win.gif') no-repeat;
+	background-size: 100% 100%;
+}
+
 .header-navs {
 	position: relative;
 }
@@ -388,14 +397,14 @@ export default {
 }
 
 .fadein-transition {
-	transition: all .3s ease-in;
+  transition: all .3s ease-in;
 	height: 230px;
 	opacity: 1;
 	overflow: hidden;
 }
 
 .fadein-enter, .fadein-leave {
-	height: 0;
-	opacity: 0;
+  height: 0;
+  opacity: 0;
 }
 </style>

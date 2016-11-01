@@ -5,14 +5,14 @@
 ## Install
 
 ```console
-$ npm install eslint-loader
+$ npm install eslint-loader --save-dev
 ```
 
 ## Usage
 
 In your webpack configuration
 
-```javascript
+```js
 module.exports = {
   // ...
   module: {
@@ -27,7 +27,7 @@ module.exports = {
 When using with transpiling loaders (like `babel-loader`), make sure they are in correct order
 (bottom to top). Otherwise files will be check after being processed by `babel-loader`
 
-```javascript
+```js
 module.exports = {
   // ...
   module: {
@@ -48,6 +48,22 @@ module.exports = {
   module: {
     preLoaders: [
       {test: /\.js$/, loader: "eslint-loader", exclude: /node_modules/}
+    ]
+  }
+  // ...
+}
+```
+
+[webpack@2.1.0-beta.23 has breaking changes](https://github.com/webpack/webpack/releases). 
+`preLoaders`  is removed  from the webpack^2.1.0-beta.23. so move it to `loaders` and using [enforce: "pre"]  instead.
+
+```js
+module.exports = {
+  // ...
+  module: {
+    loaders: [
+      {enforce: "pre", test: /\.js$/,  loader: "eslint-loader", exclude: /node_modules/}
+      // ... other loader
     ]
   }
   // ...
@@ -97,9 +113,9 @@ some issues cannot be fixed properly.**
 #### `cache` (default: false)
 
 This option will enable caching of the linting results into a file.
-This is particullarly usefull to reduce linting time when doing full build.
+This is particularly useful in reducing linting time when doing a full build.
 
-The cache is writting inside the `./node_modules/.cache` directory, thanks to the usage
+The cache file is written to the `./node_modules/.cache` directory, thanks to the usage
 of the [find-cache-dir](https://www.npmjs.com/package/find-cache-dir) module.
 
 #### `formatter` (default: eslint stylish formatter)
@@ -209,6 +225,28 @@ module.exports = {
   }
 }
 ```
+
+##### `outputReport` (default: `false`)
+Write the output of the errors to a file, for example a checkstyle xml file for use for reporting on Jenkins CI
+
+The `filePath` is relative to the webpack config: output.path
+You can pass in a different formatter for the output file, if none is passed in the default/configured formatter will be used
+
+```js
+module.exports = {
+  entry: "...",
+  module: {
+    // ...
+  },
+  eslint: {
+    outputReport: {
+      filePath: 'checkstyle.xml',
+      formatter: require('eslint/lib/formatters/checkstyle')
+    }
+  }
+}
+```
+
 
 ## Gotchas
 

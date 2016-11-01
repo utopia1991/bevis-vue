@@ -47,6 +47,7 @@
 							</p>
 							<p>
 								<a href="//www.mi.com/service/buy/buytime/" target="_blank">购物指南</a>
+
 							</p>
 							<p>
 								<a href="//www.mi.com/service/order/sendprogress/" target="_blank">订单操作</a>
@@ -63,6 +64,7 @@
 							</p>
 							<p>
 								<a href="http://fuwu.mi.com/" target="_blank">自助服务</a>
+
 							</p>
 							<p>
 								<a href="http://xiazai.mi.com/" target="_blank">相关下载</a>
@@ -79,6 +81,7 @@
 							</p>
 							<p>
 								<a href="//www.mi.com/static/maintainlocation/" target="_blank">服务网点</a>
+
 							</p>
 							<p>
 								<a href="//www.mi.com/static/familyLocation/" target="_blank">零售网点</a>
@@ -95,6 +98,7 @@
 							</p>
 							<p>
 								<a href="http://hr.xiaomi.com/" target="_blank">加入小米</a>
+
 							</p>
 							<p>
 								<a href="//www.mi.com/about/contact" target="_blank">联系我们</a>
@@ -127,6 +131,7 @@
 							</p>
 							<p>
 								<a href="//www.mi.com/mimobile/" target="_blank">小米移动</a>
+
 							</p>
 							<p>
 								<a href="//order.mi.com/misc/checkitem" target="_blank">防伪查询</a>
@@ -149,9 +154,50 @@
 					</li>
 				</ul>
 			</div>
+			<div class="site-info">
+				<div class="footer-explan clearfix">
+					<img class="logo-img" src="http://s01.mifile.cn/i/logo-footer.png?v2" alt="" />
+					<div class="explan-content">
+						<ul class="links clearfix">
+							<li class="link-item"><a href="//www.mi.com/index.html">小米商城</a></li>
+							<li class="link-item"><a href="http://www.miui.com/" target="_blank">MIUI</a></li>
+							<li class="link-item"><a href="http://www.miliao.com/" target="_blank">米聊</a></li>
+							<li class="link-item"><a href="http://www.duokan.com/" target="_blank">多看书城</a></li>
+							<li class="link-item"><a href="http://www.miwifi.com/" target="_blank">小米路由器</a></li>
+							<li class="link-item"><a href="http://call.mi.com/" target="_blank">视频电话</a></li>
+							<li class="link-item"><a href="http://blog.xiaomi.com/" target="_blank">小米后院</a></li>
+							<li class="link-item"><a href="http://xiaomi.tmall.com/" target="_blank">小米天猫店</a></li>
+							<li class="link-item"><a href="http://shop115048570.taobao.com" target="_blank">小米淘宝直营店</a></li>
+							<li class="link-item"><a href="http://union.mi.com/" target="_blank">小米网盟</a></li>
+							<li class="link-item"><a href="javascript:void(0)">问题反馈</a></li>
+							<li class="link-item"><a href="javascript:void(0)">Select Region</a></li>
+						</ul>
+						<p class="explan-txt">
+							©<a href="//www.mi.com/index.html">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank">京公网安备11010802020134号 </a> <a href="//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank">京网文[2014]0059-0009号</a><br/>
+							 违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+						</p>
+					</div>
+					<img class="logo-explan logo-explan-first" src="http://privacy-policy.truste.com/privacy-seal/seal?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8" alt="" />
+					<img class="logo-explan" src="http://s01.mifile.cn/i/v-logo-2.png" alt="" />
+					<img class="logo-explan" src="http://s01.mifile.cn/i/v-logo-1.png" alt="" />
+					<img class="logo-explan" src="http://s01.mifile.cn/i/v-logo-3.png" alt="" />
+				</div>
+				<p class="footer-desc">
+					探索黑科技，小米为发烧而生
+				</p>
+			</div>
 		</div>
 	</footer>
 </template>
+
+<script>
+export default {
+	data () {
+		return {
+		}
+	}
+}
+</script>
 
 <style>
 .footer {
@@ -230,7 +276,7 @@
 				font-size: 12px;
 				line-height: 1.5;
 				text-align: center;
-				color: #616161;
+    		color: #616161;
 			}
 			.server-btn {
 				display: block;
@@ -252,4 +298,60 @@
 	}
 }
 
+.footer-explan {
+	.logo-img {
+		float: left;
+		width: 57px;
+		height: 57px;
+	}
+	.explan-content {
+		float: left;
+		padding-left: 10px;
+		.links {
+			.link-item {
+				float: left;
+				padding: 0 5px;
+				font-size: 12px;
+				color: #757575;
+				border-right: 1px solid #757575;
+				&:nth-last-child(1) {
+					border-right: 0;
+				}
+			}
+		}
+	}
+	.explan-txt {
+		margin: 10px 0 0 5px;
+		line-height: 18px;
+		font-size: 12px;
+		color: #b0b0b0;
+		a {
+			text-decoration: none;
+			color: #b0b0b0;
+			&:hover {
+				color: #ff6700;
+			}
+		}
+	}
+	.logo-explan {
+		width: 85px;
+		height: 28px;
+		&.logo-explan-first {
+			margin-left: 50px;
+		}
+	}
+}
+
+.site-info {
+	padding: 30px 0;
+	.footer-desc {
+		text-align: left;
+		text-indent: -9999em;
+		overflow: hidden;
+		width: 267px;
+		height: 19px;
+		margin: 30px auto 0;
+		background: url('http://s01.mifile.cn/i/slogan2016.png') center center no-repeat;
+	}
+}
 </style>
