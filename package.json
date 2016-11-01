@@ -1,13 +1,12 @@
 {
-	"name": "mi-by-vue",
+	"name": "bevis vue",
 	"version": "1.0.0",
 	"description": "A Vue.js project",
-	"author": "liutao <947809647@qq.com>",
+	"author": "Bevis",
 	"private": true,
 	"scripts": {
 		"dev": "node build/dev-server.js",
 		"build": "node build/build.js",
-		"test": "",
 		"lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
 	},
 	"dependencies": {
