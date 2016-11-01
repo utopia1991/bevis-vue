@@ -2,7 +2,6 @@
 	<div class="top-header">
 		<div class="container">
 			<a href="#" class="icon-mi"></a>
-			<a href="#" class="pic-gif"></a>
 			<div class="header-navs">
 				<ul class="navs">
 					<li v-for="item in navs" class="nav">
@@ -203,14 +202,6 @@ export default {
 	background-size: 100% 100%;
 }
 
-.pic-gif {
-	width: 163px;
-	height: 66px;
-	margin-left: 10px;
-	background: url('../assets/img/win.gif') no-repeat;
-	background-size: 100% 100%;
-}
-
 .header-navs {
 	position: relative;
 }
@@ -248,9 +239,9 @@ export default {
 	.hot-word {
 		position: absolute;
 		top: 14px;
-    right: 62px;
-    z-index: 2;
-    text-align: right;
+		right: 62px;
+		z-index: 2;
+		text-align: right;
 		.hot-item {
 			float: left;
 			width: auto;
@@ -259,7 +250,7 @@ export default {
 			padding: 0 5px;
 			font-size: 12px;
 			background: #eee;
-    	color: #757575;
+			color: #757575;
 			margin-right: 5px;
 			cursor: pointer;
 			&:hover {
@@ -273,7 +264,7 @@ export default {
 		opacity: 1;
 	}
 	.fadeOut-enter, .fadeOut-leave {
-	  opacity: 0;
+		opacity: 0;
 	}
 	.search-ipt {
 		float: left;
@@ -397,14 +388,14 @@ export default {
 }
 
 .fadein-transition {
-  transition: all .3s ease-in;
+	transition: all .3s ease-in;
 	height: 230px;
 	opacity: 1;
 	overflow: hidden;
 }
 
 .fadein-enter, .fadein-leave {
-  height: 0;
-  opacity: 0;
+	height: 0;
+	opacity: 0;
 }
 </style>

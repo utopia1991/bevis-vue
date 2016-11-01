@@ -1,6 +1,6 @@
-# mi-by-vue
+# bevis vue
 
-> 使用vue.js模仿小米官网的作品
+> 使用 vue.js 制作的一个网站 demo
 
 ## 运行步骤
 
@@ -21,9 +21,9 @@ npm run build
 [http://vue.fecss.com/mi/](http://vue.fecss.com/mi/)
 
 ## 建议
-> 这个项目只是一个vue的练手项目。并没有引用一些比较好的vue.js的特性，比如vue-router或vuex。
+> 这个项目只是我的一个 vue 的练手项目，可以看一些比较好的 vue.js 的特性，比如 vue-router 或 vuex。
 >
-> 如果想系统学习vue.js的话，建议参考[jackblog-vue](https://github.com/jackhutu/jackblog-vue)这个项目。
+> 如果想系统学习 vue.js 的话，建议参考[jackblog-vue](https://github.com/jackhutu/jackblog-vue)这个项目。
 >
 > 需要学习vue的组件封装的话，建议参考[radon-ui](https://github.com/wendaosanshou/radon-ui)之类的组件库。
 
