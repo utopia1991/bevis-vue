@@ -16,10 +16,6 @@ npm run build
 
 ```
 
-## 访问路径
-
-[http://vue.fecss.com/mi/](http://vue.fecss.com/mi/)
-
 ## 建议
 > 这个项目只是我的一个 vue 的练手项目，可以看一些比较好的 vue.js 的特性，比如 vue-router 或 vuex。
 >
