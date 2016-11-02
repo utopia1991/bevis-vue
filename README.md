@@ -1,4 +1,6 @@
-# 我的 Vue 练习 App
+# bevis-vue
+
+>我的 Vue 练习 App
 
 > A Vue.js project
 
