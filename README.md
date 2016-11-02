@@ -1,4 +1,4 @@
-# zhihudaily-vue
+# 我的 Vue 练习 App
 
 > A Vue.js project
 
