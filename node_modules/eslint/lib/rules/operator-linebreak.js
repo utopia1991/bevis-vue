@@ -5,8 +5,7 @@
 
 "use strict";
 
-var lodash = require("lodash"),
-    astUtils = require("../ast-utils");
+const astUtils = require("../ast-utils");
 
 //------------------------------------------------------------------------------
 // Rule Definition
@@ -42,12 +41,12 @@ module.exports = {
         ]
     },
 
-    create: function(context) {
+    create(context) {
 
-        var usedDefaultGlobal = !context.options[0];
-        var globalStyle = context.options[0] || "after";
-        var options = context.options[1] || {};
-        var styleOverrides = options.overrides ? lodash.assign({}, options.overrides) : {};
+        const usedDefaultGlobal = !context.options[0];
+        const globalStyle = context.options[0] || "after";
+        const options = context.options[1] || {};
+        const styleOverrides = options.overrides ? Object.assign({}, options.overrides) : {};
 
         if (usedDefaultGlobal && !styleOverrides["?"]) {
             styleOverrides["?"] = "before";
@@ -57,7 +56,7 @@ module.exports = {
             styleOverrides[":"] = "before";
         }
 
-        var sourceCode = context.getSourceCode();
+        const sourceCode = context.getSourceCode();
 
         //--------------------------------------------------------------------------
         // Helpers
@@ -71,8 +70,8 @@ module.exports = {
          * @returns {void}
          */
         function validateNode(node, leftSide) {
-            var leftToken = sourceCode.getLastToken(leftSide);
-            var operatorToken = sourceCode.getTokenAfter(leftToken);
+            let leftToken = sourceCode.getLastToken(leftSide);
+            let operatorToken = sourceCode.getTokenAfter(leftToken);
 
             // When the left part of a binary expression is a single expression wrapped in
             // parentheses (ex: `(a) + b`), leftToken will be the last token of the expression
@@ -84,46 +83,74 @@ module.exports = {
                 operatorToken = sourceCode.getTokenAfter(operatorToken);
             }
 
-            var rightToken = sourceCode.getTokenAfter(operatorToken);
-            var operator = operatorToken.value;
-            var operatorStyleOverride = styleOverrides[operator];
-            var style = operatorStyleOverride || globalStyle;
+            const rightToken = sourceCode.getTokenAfter(operatorToken);
+            const operator = operatorToken.value;
+            const operatorStyleOverride = styleOverrides[operator];
+            const style = operatorStyleOverride || globalStyle;
 
             // if single line
             if (astUtils.isTokenOnSameLine(leftToken, operatorToken) &&
                     astUtils.isTokenOnSameLine(operatorToken, rightToken)) {
 
-                return;
+                // do nothing.
 
             } else if (operatorStyleOverride !== "ignore" && !astUtils.isTokenOnSameLine(leftToken, operatorToken) &&
                     !astUtils.isTokenOnSameLine(operatorToken, rightToken)) {
 
                 // lone operator
-                context.report(node, {
-                    line: operatorToken.loc.end.line,
-                    column: operatorToken.loc.end.column
-                }, "Bad line breaking before and after '" + operator + "'.");
+                context.report({
+                    node,
+                    loc: {
+                        line: operatorToken.loc.end.line,
+                        column: operatorToken.loc.end.column
+                    },
+                    message: "Bad line breaking before and after '{{operator}}'.",
+                    data: {
+                        operator
+                    }
+                });
 
             } else if (style === "before" && astUtils.isTokenOnSameLine(leftToken, operatorToken)) {
 
-                context.report(node, {
-                    line: operatorToken.loc.end.line,
-                    column: operatorToken.loc.end.column
-                }, "'" + operator + "' should be placed at the beginning of the line.");
+                context.report({
+                    node,
+                    loc: {
+                        line: operatorToken.loc.end.line,
+                        column: operatorToken.loc.end.column
+                    },
+                    message: "'{{operator}}' should be placed at the beginning of the line.",
+                    data: {
+                        operator
+                    }
+                });
 
             } else if (style === "after" && astUtils.isTokenOnSameLine(operatorToken, rightToken)) {
 
-                context.report(node, {
-                    line: operatorToken.loc.end.line,
-                    column: operatorToken.loc.end.column
-                }, "'" + operator + "' should be placed at the end of the line.");
+                context.report({
+                    node,
+                    loc: {
+                        line: operatorToken.loc.end.line,
+                        column: operatorToken.loc.end.column
+                    },
+                    message: "'{{operator}}' should be placed at the end of the line.",
+                    data: {
+                        operator
+                    }
+                });
 
             } else if (style === "none") {
 
-                context.report(node, {
-                    line: operatorToken.loc.end.line,
-                    column: operatorToken.loc.end.column
-                }, "There should be no line break before or after '" + operator + "'");
+                context.report({
+                    node,
+                    loc: {
+                        line: operatorToken.loc.end.line,
+                        column: operatorToken.loc.end.column
+                    },
+                    message: "There should be no line break before or after '{{operator}}'.",
+                    data: {
+                        operator
+                    }
+                });
 
             }
         }
@@ -145,12 +172,12 @@ module.exports = {
             BinaryExpression: validateBinaryExpression,
             LogicalExpression: validateBinaryExpression,
             AssignmentExpression: validateBinaryExpression,
-            VariableDeclarator: function(node) {
+            VariableDeclarator(node) {
                 if (node.init) {
                     validateNode(node, node.id);
                 }
             },
-            ConditionalExpression: function(node) {
+            ConditionalExpression(node) {
                 validateNode(node, node.test);
                 validateNode(node, node.consequent);
             }

@@ -30,8 +30,8 @@ module.exports = {
         ]
     },
 
-    create: function(context) {
-        var options = context.options[0] || {},
+    create(context) {
+        const options = context.options[0] || {},
             ignoreDestructuring = options.ignoreDestructuring === true,
             ignoreImport = options.ignoreImport === true,
             ignoreExport = options.ignoreExport === true;
@@ -49,16 +49,16 @@ module.exports = {
          * @returns {void}
          */
         function reportError(node, initial, result, type) {
-            var name = initial.type === "Identifier" ? initial.name : initial.value;
+            const name = initial.type === "Identifier" ? initial.name : initial.value;
 
             return context.report({
-                node: node,
+                node,
                 message: "{{type}} {{name}} unnecessarily renamed.",
                 data: {
-                    name: name,
-                    type: type
+                    name,
+                    type
                 },
-                fix: function(fixer) {
+                fix(fixer) {
                     return fixer.replaceTextRange([
                         initial.range[0],
                         result.range[1]
@@ -73,18 +73,15 @@ module.exports = {
          * @returns {void}
          */
         function checkDestructured(node) {
-            var properties,
-                i;
-
             if (ignoreDestructuring) {
                 return;
             }
 
-            properties = node.properties;
+            const properties = node.properties;
 
-            for (i = 0; i < properties.length; i++) {
+            for (let i = 0; i < properties.length; i++) {
                 if (properties[i].shorthand) {
-                    return;
+                    continue;
                 }
 
                 /**
@@ -94,7 +91,7 @@ module.exports = {
                  * so there is no "renaming" occurring here.
                  */
                 if (properties[i].computed || !properties[i].key) {
-                    return;
+                    continue;
                 }
 
                 if (properties[i].key.type === "Identifier" && properties[i].key.name === properties[i].value.name ||
