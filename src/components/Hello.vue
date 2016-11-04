@@ -17,11 +17,11 @@
 		<!-- v-on:function 可以直接缩写成为 @function -->
 		<h2 @click="doSomething">Ecosystem</h2>
 		<ul>
-			<!-- v-bind:style 的对象语法直接绑定到一个样式 -->
-			<li><a v-bind:style="{ fontSize: fontSize + 'px' }" href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-			<li><a v-bind:style="{ fontSize: fontSize + 'px' }" href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-			<li><a v-bind:style="{ fontSize: fontSize + 'px' }" href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-			<li><a v-bind:style="{ fontSize: fontSize + 'px' }" href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+			<!-- v-for 指令基于一个数组渲染一个列表 -->
+			<li v-for="item in items">
+				<!-- v-bind:style 的对象语法直接绑定到一个样式 -->
+				<a v-bind:style="{ fontSize: fontSize + 'px' }" :href="item.url" target="_blank">{{item.label}}</a>
+			</li>
 		</ul>
 	</div>
 </template>
@@ -43,7 +43,25 @@ export default {
       flicr: false,
       favorAccount: 1234,
       isBorder: true,
-      fontSize: 22
+      fontSize: 22,
+      items: [
+        {
+          url: 'https://router.vuejs.org/zh-cn/index.html',
+          label: 'vue-router'
+        },
+        {
+          url: 'http://vuex.vuejs.org/',
+          label: 'vuex'
+        },
+        {
+          url: 'http://vue-loader.vuejs.org/',
+          label: 'vue-loader'
+        },
+        {
+          url: 'https://github.com/vuejs/awesome-vue',
+          label: 'awesome-vue'
+        }
+      ]
     }
   },
   computed: {
