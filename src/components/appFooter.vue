@@ -1,9 +1,10 @@
+<style lang="scss" scoped>
+	@import '../assets/css/appFooter.scss';
+</style>
+
 <template>
-	<div class="hello">
-		<!-- 我们可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
-		<h1 v-bind:class="{'fontBorder':isBorder}">{{msg}}</h1>
-		<!-- 双 Mustache 标签( {{}} )将数据解析为纯文本而不是 HTML。为了输出真的 HTML 字符串，需要用三 Mustache 标签： <div>{{{ raw_html }}}</div> -->
-		<h2 class="subTitle">{{subTitle}}</h2><sup><s>{{favorAccountPlus}}</s></sup>
+	<div class="footer">
+		<sup><s>{{favorAccountPlus}}</s></sup>
 		<ul>
 			<!-- v-bind:function 用来给 function 绑定事件 -->
 			<!-- v-if="" 条件渲染 -->
@@ -17,7 +18,6 @@
 		<!-- v-on:function 可以直接缩写成为 @function -->
 		<h2 @click="doSomething">Ecosystem</h2>
 		<ul>
-			<!-- v-for 指令基于一个数组渲染一个列表 -->
 			<li v-for="item in items">
 				<!-- v-bind:style 的对象语法直接绑定到一个样式 -->
 				<a v-bind:style="{ fontSize: fontSize + 'px' }" :href="item.url" target="_blank">{{item.label}}</a>
@@ -28,11 +28,9 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'footer',
   data () {
     return {
-      msg: 'Welcome To Bevis Vue App',
-      subTitle: 'Bevis Shen',
       github: true,
       githubUrl: 'https://github.com/utopia1991',
       facebookUrl: 'https://www.facebook.com/bevis1991',
@@ -79,38 +77,3 @@ export default {
   }
 }
 </script>
-
-<!-- 使用 lang="scss" 或者其他预编译直接可以使用 -->
-<!-- 添加 "scoped" 参数可以限制这个css央视只在这个模块使用 -->
-<style lang="scss" scoped>
-.hello {
-	h1,h2 {
-		font-weight: normal;
-	}
-	.fontBorder {
-		font-weight: 500;
-	}
-	.subTitle {
-		display: inline-block;
-		cursor: default;
-		&:hover {
-			color: #42b983;
-		}
-	}
-	ul {
-		list-style-type: none;
-		padding: 0;
-		li {
-			display: inline-block;
-			margin: 0 10px;
-			a {
-				text-decoration: none;
-				color: #42b983;
-				&:hover {
-					color: #39425b;
-				}
-			}
-		}
-	}
-}
-</style>
