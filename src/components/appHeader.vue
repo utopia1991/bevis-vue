@@ -27,7 +27,7 @@
 						</div>
 					</li>
 					<li class="more-menu" id="header_guanzhu">
-						<a class="menu-link" href="">关注我们：</a>
+						<a class="menu-link" href="">关注我吧：</a>
 						<i class="iconfont icon-arrow"></i>
 						<div class="more-bd">
 							<div class="list">
@@ -65,6 +65,7 @@
 				</h2>
 				<p>
 					{{subTitle}}
+					<em class="favor-account">+{{favorAccountPlus}}</em>
 				</p>
 			</div>
 		</div>
@@ -72,7 +73,7 @@
 			<div class="hd_nav_bd cle">
 				<div class="main_nav" id="main_nav">
 					<div class="main_nav_link">
-						<a href="html/allCategory.html"	target="_blank">全部商品分类</a>
+						<a href="html/allCategory.html"	target="_blank">路飞海贼团全体人员</a>
 						<i class="iconfont icon-arrow"></i>
 					</div>
 					<div class="main_cata" id="J_mainCata" style="opacity: 0; display: none;">
@@ -164,6 +165,7 @@ export default {
     return {
       blogName: 'Welcome To Bevis\'s Blog',
       subTitle: 'Bevis Shen',
+      favorAccount: 8888,
       goods: [
         {
           url: 'https://router.vuejs.org/zh-cn/index.html',
@@ -210,29 +212,48 @@ export default {
         {
           url: '/index.html',
           isActive: true,
-          name: '首页'
+          name: '路飞'
         },
         {
           url: '',
-          name: '淘宝'
+          name: '索隆'
         },
         {
           url: '',
-          name: '天猫'
+          name: '山治'
         },
         {
           url: '',
-          name: '聚划算'
+          name: '娜美'
         },
         {
           url: '',
-          name: '飞猪'
+          name: '乌索普'
         },
         {
           url: '',
-          name: '菜鸟'
+          name: '乔巴'
+        },
+        {
+          url: '',
+          name: '罗宾'
+        },
+        {
+          url: '',
+          name: '弗兰克'
+        },
+        {
+          url: '',
+          name: '布鲁克'
         }
       ]
+    }
+  },
+  computed: {
+    // 一个计算属性的 getter
+    favorAccountPlus: function () {
+      // `this` 指向 vm 实例
+      return this.favorAccount + 1111
     }
   },
   methods: {

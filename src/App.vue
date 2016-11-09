@@ -1,18 +1,21 @@
 <template>
 	<div id="app">
 		<top></top>
+		<today></today>
 		<bottom></bottom>
 	</div>
 </template>
 
 <script>
 import top from './components/appHeader'
+import today from './components/appContentToday'
 import bottom from './components/appFooter'
 
 export default {
   name: 'app',
   components: {
     top,
+    today,
     bottom
   }
 }

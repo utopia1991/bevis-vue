@@ -3,70 +3,76 @@
 </style>
 
 <template>
-	<div class="footer">
-		<sup><s>{{favorAccountPlus}}</s></sup>
-		<ul>
-			<!-- v-bind:function 用来给 function 绑定事件 -->
-			<!-- v-if="" 条件渲染 -->
-			<li><a v-if="github" v-bind:href="githubUrl" target="_blank">Github</a></li>
-			<!-- v-bind:function 可以直接缩写成为 :function -->
-			<li><a v-if="weibo" :href="weiboUrl" target="_blank">Weibo</a></li>
-			<li><a v-if="facebook" :href="facebookUrl" target="_blank">Facebook</a></li>
-			<li><a v-if="wechat" title="13023981769">Wechat</a></li>
-			<li><a v-if="flicr">Flicr</a></li>
-		</ul>
-		<!-- v-on:function 可以直接缩写成为 @function -->
-		<h2 @click="doSomething">Ecosystem</h2>
-		<ul>
-			<li v-for="item in items">
-				<!-- v-bind:style 的对象语法直接绑定到一个样式 -->
-				<a v-bind:style="{ fontSize: fontSize + 'px' }" :href="item.url" target="_blank">{{item.label}}</a>
-			</li>
-		</ul>
+	<div id="footer">
+		<div class="footer-main">
+			<ul>
+				<!-- v-if="" 条件渲染 -->
+				<!-- v-bind:function 可以直接缩写成为 :function,  v-on:function 可以直接缩写成为 @function-->
+				<li><a v-if="github" v-bind:href="githubUrl" target="_blank">Github</a></li>
+				<li v-for="share in shares"><a :href="share.url" target="_blank">{{share.name}}</a></li>
+			</ul>
+			<div class="footer-nav">
+				<a href="" v-for="rule in rules" target="_blank">{{rule.name}}</a>
+			</div>
+		</div>
 	</div>
 </template>
 
 <script>
 export default {
-  name: 'footer',
   data () {
     return {
       github: true,
       githubUrl: 'https://github.com/utopia1991',
-      facebookUrl: 'https://www.facebook.com/bevis1991',
-      weiboUrl: 'http://weibo.com/2619492527',
-      wechat: true,
-      facebook: true,
-      weibo: true,
-      flicr: false,
-      favorAccount: 1234,
-      isBorder: true,
-      fontSize: 22,
-      items: [
+      shares: [
         {
-          url: 'https://router.vuejs.org/zh-cn/index.html',
-          label: 'vue-router'
+          name: 'Facebook',
+          url: 'https://www.facebook.com/bevis1991'
         },
         {
-          url: 'http://vuex.vuejs.org/',
-          label: 'vuex'
+          name: 'Linkein',
+          url: 'http://www.linkedin.com/in/bevis1991'
         },
         {
-          url: 'http://vue-loader.vuejs.org/',
-          label: 'vue-loader'
+          name: 'Twitter',
+          url: 'https://twitter.com/bevis_shen'
         },
         {
-          url: 'https://github.com/vuejs/awesome-vue',
-          label: 'awesome-vue'
+          name: 'Weibo',
+          url: 'http://weibo.com/2619492527'
+        },
+        {
+          name: 'Wechat',
+          url: ''
+        },
+        {
+          name: 'QQ',
+          url: ''
+        }
+      ],
+      rules: [
+        {
+          name: '免责条款'
+        },
+        {
+          name: '隐私保护'
+        },
+        {
+          name: '咨询热点'
+        },
+        {
+          name: '联系我们'
+        },
+        {
+          name: '公司简介'
+        },
+        {
+          name: '批发方案'
+        },
+        {
+          name: '配送方式'
         }
       ]
-    }
-  },
-  computed: {
-    // 一个计算属性的 getter
-    favorAccountPlus: function () {
-      // `this` 指向 vm 实例
-      return this.favorAccount + 1111
     }
   },
   methods: {
