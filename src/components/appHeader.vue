@@ -42,7 +42,7 @@
 				<form>
 					<input class="sea_input" type="text" name="keywords" id="keyword" value="" autocomplete="off">
 					<input type="hidden" value="k1" name="dataBi">
-					<button type="button" class="sea_submit" id="search" onclick="checkSearchForm();">搜索</button>
+					<button type="button" class="sea_submit" id="search">上船</button>
 				</form>
 			</div>
 			<div class="head_search_hot">

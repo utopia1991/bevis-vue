@@ -60,25 +60,25 @@ export default {
       ],
       rules: [
         {
-          name: '免责条款'
+          name: '克洛克达尔'
         },
         {
-          name: '隐私保护'
+          name: '女帝汉库克'
         },
         {
-          name: '咨询热点'
+          name: '多弗朗明哥'
         },
         {
-          name: '联系我们'
+          name: '巴索罗谬 大熊'
         },
         {
-          name: '公司简介'
+          name: '鱼人甚平'
         },
         {
-          name: '批发方案'
+          name: '小丑巴基'
         },
         {
-          name: '配送方式'
+          name: '第一剑客鹰眼'
         }
       ]
     }

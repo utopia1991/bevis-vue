@@ -2,6 +2,7 @@
 	<div id="app">
 		<top></top>
 		<wanted></wanted>
+		<sidebar></sidebar>
 		<bottom></bottom>
 	</div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import top from './components/appHeader'
 import wanted from './components/appContentWanted'
+import sidebar from './components/appSidebar'
 import bottom from './components/appFooter'
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     top,
     wanted,
+    sidebar,
     bottom
   }
 }
