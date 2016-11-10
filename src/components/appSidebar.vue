@@ -13,7 +13,6 @@
 </template>
 
 <script>
-  // import '../assets/js/jquery.js'
   export default{
     data () {
       return {
