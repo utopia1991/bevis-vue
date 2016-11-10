@@ -1,21 +1,21 @@
 <template>
 	<div id="app">
 		<top></top>
-		<today></today>
+		<wanted></wanted>
 		<bottom></bottom>
 	</div>
 </template>
 
 <script>
 import top from './components/appHeader'
-import today from './components/appContentToday'
+import wanted from './components/appContentWanted'
 import bottom from './components/appFooter'
 
 export default {
   name: 'app',
   components: {
     top,
-    today,
+    wanted,
     bottom
   }
 }

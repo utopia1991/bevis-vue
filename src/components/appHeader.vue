@@ -17,7 +17,7 @@
 				</ul>
 				<ul id="userinfo-bar">
 					<li class="more-menu">
-						<a href="">我的鲜宿</a>
+						<a href="">我的海贼团</a>
 						<i class="iconfont icon-arrow"></i>
 						<div class="more-bd">
 							<div class="list">
@@ -27,15 +27,7 @@
 						</div>
 					</li>
 					<li class="more-menu" id="header_guanzhu">
-						<a class="menu-link" href="">关注我吧：</a>
-						<i class="iconfont icon-arrow"></i>
-						<div class="more-bd">
-							<div class="list">
-								<p>
-									<img src="../assets/img/guanzhu.jpg"/>
-								</p>
-							</div>
-						</div>
+						<a class="menu-link" href="https://github.com/utopia1991" target="_blank">关注我吧</a>
 					</li>
 				</ul>
 			</div>
@@ -73,7 +65,7 @@
 			<div class="hd_nav_bd cle">
 				<div class="main_nav" id="main_nav">
 					<div class="main_nav_link">
-						<a href="html/allCategory.html"	target="_blank">路飞海贼团全体人员</a>
+						<a href="html/allCategory.html"	target="_blank">路飞海贼团人员</a>
 						<i class="iconfont icon-arrow"></i>
 					</div>
 					<div class="main_cata" id="J_mainCata" style="opacity: 0; display: none;">
@@ -98,10 +90,10 @@
 								<dl>
 									<dt>推荐产地</dt>
 									<dd class="brand_cata cle">
-										<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/1434774301868183887.jpg"	title="墨西哥"></a>
-										<a href=""	target="_blank"><img alt="美国" src="../assets/img/1434774545710692732.jpg"	title="美国"></a>
-										<a href=""	target="_blank"><img alt="泰国" src="../assets/img/1434774378884659848.jpg"	title="泰国"></a>
-										<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/1434774556347087145.jpg"	title="新西兰"></a>
+										<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/luffy.png"></a>
+										<a href=""	target="_blank"><img alt="美国" src="../assets/img/zero.png"></a>
+										<a href=""	target="_blank"><img alt="泰国" src="../assets/img/sanji.png"></a>
+										<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/nami.png"></a>
 									</dd>
 								</dl>
 							</div>
@@ -121,10 +113,10 @@
 								<dl>
 									<dt>推荐产地</dt>
 									<dd class="brand_cata cle">
-										<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/1434774301868183887.jpg"	title="墨西哥"></a>
-										<a href=""	target="_blank"><img alt="美国" src="../assets/img/1434774545710692732.jpg"	title="美国"></a>
-										<a href=""	target="_blank"><img alt="泰国" src="../assets/img/1434774378884659848.jpg"	title="泰国"></a>
-										<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/1434774556347087145.jpg"	title="新西兰"></a>
+										<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/luffy.png"></a>
+										<a href=""	target="_blank"><img alt="美国" src="../assets/img/luffy.png"></a>
+										<a href=""	target="_blank"><img alt="泰国" src="../assets/img/luffy.png"></a>
+										<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/luffy.png"></a>
 									</dd>
 								</dl>
 							</div>
@@ -140,10 +132,10 @@
 									<dl>
 											<dt>推荐产地</dt>
 											<dd class="brand_cata cle">
-									<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/1434774301868183887.jpg"	title="墨西哥"></a>
-									<a href=""	target="_blank"><img alt="美国" src="../assets/img/1434774545710692732.jpg"	title="美国"></a>
-									<a href=""	target="_blank"><img alt="泰国" src="../assets/img/1434774378884659848.jpg"	title="泰国"></a>
-									<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/1434774556347087145.jpg"	title="新西兰"></a> </dd>
+									<a href=""	target="_blank"><img alt="墨西哥" src=""	title="墨西哥"></a>
+									<a href=""	target="_blank"><img alt="美国" src=""	title="美国"></a>
+									<a href=""	target="_blank"><img alt="泰国" src=""	title="泰国"></a>
+									<a href=""	target="_blank"><img alt="新西兰" src=""	title="新西兰"></a> </dd>
 									</dl>
 								</div>
 						</div>

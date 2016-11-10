@@ -8,7 +8,7 @@
 			<ul>
 				<!-- v-if="" 条件渲染 -->
 				<!-- v-bind:function 可以直接缩写成为 :function,  v-on:function 可以直接缩写成为 @function-->
-				<li><a v-if="github" v-bind:href="githubUrl" target="_blank">Github</a></li>
+				<li><a v-if="github" v-bind:href="githubUrl" target="_blank">LUFFY</a></li>
 				<li v-for="share in shares"><a :href="share.url" target="_blank">{{share.name}}</a></li>
 			</ul>
 			<div class="footer-nav">
@@ -23,30 +23,38 @@ export default {
   data () {
     return {
       github: true,
-      githubUrl: 'https://github.com/utopia1991',
+      githubUrl: '',
       shares: [
         {
-          name: 'Facebook',
-          url: 'https://www.facebook.com/bevis1991'
-        },
-        {
-          name: 'Linkein',
-          url: 'http://www.linkedin.com/in/bevis1991'
-        },
-        {
-          name: 'Twitter',
-          url: 'https://twitter.com/bevis_shen'
-        },
-        {
-          name: 'Weibo',
-          url: 'http://weibo.com/2619492527'
-        },
-        {
-          name: 'Wechat',
+          name: 'ZERO',
           url: ''
         },
         {
-          name: 'QQ',
+          name: 'SANJI',
+          url: ''
+        },
+        {
+          name: 'NAMI',
+          url: ''
+        },
+        {
+          name: 'USOPP',
+          url: ''
+        },
+        {
+          name: 'CHOPPER',
+          url: ''
+        },
+        {
+          name: 'ROBBIN',
+          url: ''
+        },
+        {
+          name: 'FRANK',
+          url: ''
+        },
+        {
+          name: 'BROOK',
           url: ''
         }
       ],
