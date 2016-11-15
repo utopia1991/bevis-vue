@@ -27,9 +27,6 @@
 					},
 					{
 						image: 'static/img/banner/slide_2.jpg'
-					},
-					{
-						image: 'static/img/banner/slide_3.jpg'
 					}
 				]
 			}
