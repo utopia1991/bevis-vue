@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import top from './components/appHeader'
-import slider from './components/appSlider'
-import wanted from './components/appContentWanted'
-import sidebar from './components/appSidebar'
-import bottom from './components/appFooter'
-import $ from 'jquery'
+import top from './components/appHeader';
+import slider from './components/appSlider';
+import wanted from './components/appContentWanted';
+import sidebar from './components/appSidebar';
+import bottom from './components/appFooter';
+import $ from 'jquery';
 
 export default {
   name: 'app',

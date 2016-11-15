@@ -19,7 +19,7 @@
 </template>
 
 <script>
-export default {
+	export default {
   data () {
     return {
       github: true,
