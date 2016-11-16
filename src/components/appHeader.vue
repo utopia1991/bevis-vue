@@ -153,103 +153,103 @@
 
 <script>
 export default {
-  data () {
-    return {
-      blogName: 'Welcome To Bevis\'s Blog',
-      subTitle: 'Bevis Shen',
-      favorAccount: 8888,
-      goods: [
-        {
-          url: 'https://router.vuejs.org/zh-cn/index.html',
-          name: '路飞'
-        },
-        {
-          url: 'http://vuex.vuejs.org/',
-          name: '索隆'
-        },
-        {
-          url: 'http://vue-loader.vuejs.org/',
-          name: '山治'
-        },
-        {
-          url: 'https://github.com/vuejs/awesome-vue',
-          name: '娜美'
-        },
-        {
-          url: 'https://github.com/vuejs/awesome-vue',
-          name: '乌索普'
-        }
-      ],
-      mines: [
-        {
-          name: '我的订单'
-        },
-        {
-          name: '我的评价'
-        },
-        {
-          name: '我的余额'
-        },
-        {
-          name: '我的红包'
-        },
-        {
-          name: '我的收藏'
-        },
-        {
-          name: '修改收货地址'
-        }
-      ],
-      tabs: [
-        {
-          url: '/index.html',
-          isActive: true,
-          name: '路飞'
-        },
-        {
-          url: '',
-          name: '索隆'
-        },
-        {
-          url: '',
-          name: '山治'
-        },
-        {
-          url: '',
-          name: '娜美'
-        },
-        {
-          url: '',
-          name: '乌索普'
-        },
-        {
-          url: '',
-          name: '乔巴'
-        },
-        {
-          url: '',
-          name: '罗宾'
-        },
-        {
-          url: '',
-          name: '弗兰克'
-        },
-        {
-          url: '',
-          name: '布鲁克'
-        }
-      ]
-    }
-  },
-  computed: {
-    // 一个计算属性的 getter
-    favorAccountPlus: function () {
-      // `this` 指向 vm 实例
-      return this.favorAccount + 1111
-    }
-  },
-  methods: {
-    // ps:在vue里字符串被规定位要用单引号,且注释的时候双斜杆后面要用空格
-  }
+	data () {
+		return {
+			blogName: 'Welcome To Bevis\'s Blog',
+			subTitle: 'Bevis Shen',
+			favorAccount: 8888,
+			goods: [
+				{
+					url: 'https://router.vuejs.org/zh-cn/index.html',
+					name: '路飞'
+				},
+				{
+					url: 'http://vuex.vuejs.org/',
+					name: '索隆'
+				},
+				{
+					url: 'http://vue-loader.vuejs.org/',
+					name: '山治'
+				},
+				{
+					url: 'https://github.com/vuejs/awesome-vue',
+					name: '娜美'
+				},
+				{
+					url: 'https://github.com/vuejs/awesome-vue',
+					name: '乌索普'
+				}
+			],
+			mines: [
+				{
+					name: '我的订单'
+				},
+				{
+					name: '我的评价'
+				},
+				{
+					name: '我的余额'
+				},
+				{
+					name: '我的红包'
+				},
+				{
+					name: '我的收藏'
+				},
+				{
+					name: '修改收货地址'
+				}
+			],
+			tabs: [
+				{
+					url: '/index.html',
+					isActive: true,
+					name: '路飞'
+				},
+				{
+					url: '',
+					name: '索隆'
+				},
+				{
+					url: '',
+					name: '山治'
+				},
+				{
+					url: '',
+					name: '娜美'
+				},
+				{
+					url: '',
+					name: '乌索普'
+				},
+				{
+					url: '',
+					name: '乔巴'
+				},
+				{
+					url: '',
+					name: '罗宾'
+				},
+				{
+					url: '',
+					name: '弗兰克'
+				},
+				{
+					url: '',
+					name: '布鲁克'
+				}
+			]
+		}
+	},
+	computed: {
+		// 一个计算属性的 getter
+		favorAccountPlus: function () {
+			// `this` 指向 vm 实例
+			return this.favorAccount + 1111
+		}
+	},
+	methods: {
+		// ps:在vue里字符串被规定位要用单引号,且注释的时候双斜杆后面要用空格
+	}
 }
 </script>

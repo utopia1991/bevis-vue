@@ -20,74 +20,74 @@
 
 <script>
 	export default {
-  data () {
-    return {
-      github: true,
-      githubUrl: '',
-      shares: [
-        {
-          name: 'ZERO',
-          url: ''
-        },
-        {
-          name: 'SANJI',
-          url: ''
-        },
-        {
-          name: 'NAMI',
-          url: ''
-        },
-        {
-          name: 'USOPP',
-          url: ''
-        },
-        {
-          name: 'CHOPPER',
-          url: ''
-        },
-        {
-          name: 'ROBBIN',
-          url: ''
-        },
-        {
-          name: 'FRANK',
-          url: ''
-        },
-        {
-          name: 'BROOK',
-          url: ''
-        }
-      ],
-      rules: [
-        {
-          name: '克洛克达尔'
-        },
-        {
-          name: '女帝汉库克'
-        },
-        {
-          name: '多弗朗明哥'
-        },
-        {
-          name: '巴索罗谬 大熊'
-        },
-        {
-          name: '鱼人甚平'
-        },
-        {
-          name: '小丑巴基'
-        },
-        {
-          name: '第一剑客鹰眼'
-        }
-      ]
-    }
-  },
-  methods: {
-    doSomething () {
-      // ps:在vue里字符串被规定位要用单引号,且注释的时候双斜杆后面要用空格
-      console.log('Bevis is a awesome man!')
-    }
-  }
+	data () {
+		return {
+			github: true,
+			githubUrl: '',
+			shares: [
+				{
+					name: 'ZERO',
+					url: ''
+				},
+				{
+					name: 'SANJI',
+					url: ''
+				},
+				{
+					name: 'NAMI',
+					url: ''
+				},
+				{
+					name: 'USOPP',
+					url: ''
+				},
+				{
+					name: 'CHOPPER',
+					url: ''
+				},
+				{
+					name: 'ROBBIN',
+					url: ''
+				},
+				{
+					name: 'FRANK',
+					url: ''
+				},
+				{
+					name: 'BROOK',
+					url: ''
+				}
+			],
+			rules: [
+				{
+					name: '克洛克达尔'
+				},
+				{
+					name: '女帝汉库克'
+				},
+				{
+					name: '多弗朗明哥'
+				},
+				{
+					name: '巴索罗谬 大熊'
+				},
+				{
+					name: '鱼人甚平'
+				},
+				{
+					name: '小丑巴基'
+				},
+				{
+					name: '第一剑客鹰眼'
+				}
+			]
+		}
+	},
+	methods: {
+		doSomething () {
+			// ps:在vue里字符串被规定位要用单引号,且注释的时候双斜杆后面要用空格
+			console.log('Bevis is a awesome man!')
+		}
+	}
 }
 </script>

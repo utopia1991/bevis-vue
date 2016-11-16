@@ -3,7 +3,6 @@
 		<top></top>
 		<slider></slider>
 		<wanted></wanted>
-		<lfVideo></lfVideo>
 		<sidebar></sidebar>
 		<bottom></bottom>
 	</div>
@@ -13,7 +12,6 @@
 	import top from './components/appHeader';
 	import slider from './components/appSlider';
 	import wanted from './components/appContentWanted';
-	import lfVideo from './components/appVideo';
 	import sidebar from './components/appSidebar';
 	import bottom from './components/appFooter';
 	import $ from 'jquery';
@@ -24,7 +22,6 @@
 			top,
 			slider,
 			wanted,
-			lfVideo,
 			sidebar,
 			bottom
 		}

@@ -13,15 +13,15 @@
 </template>
 
 <script>
-  export default{
-    data () {
-      return {
-      }
-    },
-    methods: {
-      backTotop () {
-        document.body.scrollTop = 0
-      }
-    }
-  }
+	export default{
+		data () {
+			return {
+			}
+		},
+		methods: {
+			backTotop () {
+				document.body.scrollTop = 0
+			}
+		}
+	}
 </script>

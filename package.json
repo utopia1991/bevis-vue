@@ -1,7 +1,7 @@
 {
   "name": "vue",
   "version": "1.0.0",
-  "description": "vue.js demo",
+  "description": "vue.js Project",
   "author": "Bevis Shen <1304354608@qq.com>",
   "private": true,
   "scripts": {
@@ -10,10 +10,12 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "browserify": "^13.1.1",
     "cropper": "^2.3.4",
     "jquery": "^3.1.1",
     "vue": "^2.0.1",
     "vue-easy-slider": "^1.2.3",
+    "vue-lazyload": "^0.9.2",
     "vue-video-player": "^2.3.4"
   },
   "devDependencies": {
