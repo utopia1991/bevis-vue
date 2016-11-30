@@ -202,44 +202,44 @@ export default {
 			],
 			tabs: [
 				{
-					url: '/index.html',
+					url: '/index',
 					isActive: true,
 					name: '首页'
 				},
 				{
-					url: '',
+					url: '/luffy',
 					name: '路飞'
 				},
 				{
-					url: '',
+					url: '/zero',
 					name: '索隆'
 				},
 				{
-					url: '',
+					url: '/sanji',
 					name: '山治'
 				},
 				{
-					url: '',
+					url: '/nami',
 					name: '娜美'
 				},
 				{
-					url: '',
+					url: '/usopp',
 					name: '乌索普'
 				},
 				{
-					url: '',
+					url: '/chopper',
 					name: '乔巴'
 				},
 				{
-					url: '',
+					url: '/robin',
 					name: '罗宾'
 				},
 				{
-					url: '',
+					url: '/frank',
 					name: '弗兰克'
 				},
 				{
-					url: '',
+					url: '/brook',
 					name: '布鲁克'
 				}
 			]

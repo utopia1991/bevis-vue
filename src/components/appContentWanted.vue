@@ -25,7 +25,7 @@
 		<div class="wanted_main">
 			<ul class="wanted_list cle" id="wanted_list">
 				<li class="show" v-for="character in characters">
-					<a href="" target="_blank">
+					<a :href="character.link" target="_blank">
 						<p class="pic">
 							<img v-lazy="character.url">
 						</p>
@@ -68,48 +68,56 @@
 				captainMethod: 'DEAD OR ALIVE',
 				characters: [
 					{
+						link: '/zero',
 						name: 'Zero',
 						url: 'static/img/zero.png',
 						price: '3亿',
 						method: 'DEAD OR ALIVE'
 					},
 					{
+						link: '/sanji',
 						name: 'Sanji',
 						url: 'static/img/sanji.png',
 						price: '1.2亿',
 						method: 'ALIVE'
 					},
 					{
+						link: '/nami',
 						name: 'Nami',
 						url: 'static/img/nami.png',
 						price: '0.6亿',
 						method: 'DEAD OR ALIVE'
 					},
 					{
+						link: '/usopp',
 						name: 'Usopp',
 						url: 'static/img/usopp.png',
 						price: '0.8亿',
 						method: 'DEAD OR ALIVE'
 					},
 					{
+						link: '/chopper',
 						name: 'Chopper',
 						url: 'static/img/chopper.png',
 						price: '5',
 						method: 'DEAD OR ALIVE'
 					},
 					{
+						link: '/robin',
 						name: 'Robin',
 						url: 'static/img/robin.png',
 						price: '1.0亿',
 						method: 'DEAD OR ALIVE'
 					},
 					{
+						link: '/frank',
 						name: 'Frank',
 						url: 'static/img/frank.png',
 						price: '1.6亿',
 						method: 'DEAD OR ALIVE'
 					},
 					{
+						link: '/brook',
 						name: 'Brook',
 						url: 'static/img/brook.png',
 						price: '0.8亿',
