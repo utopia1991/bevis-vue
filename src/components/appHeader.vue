@@ -204,6 +204,10 @@ export default {
 				{
 					url: '/index.html',
 					isActive: true,
+					name: '首页'
+				},
+				{
+					url: '',
 					name: '路飞'
 				},
 				{
