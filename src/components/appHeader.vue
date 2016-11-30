@@ -77,68 +77,6 @@
 							</li>
 						</ul>
 					</div>
-					<div class="J_subCata" id="J_subCata" style="opacity: 0; left: 100px; top: 35px;">
-							<div class="J_subView" style="display: none;">
-								<dl>
-									<dt><a href="" target="_blank">进口鲜果</a></dt>
-									<dd></dd>
-								</dl>
-								<dl>
-									<dt><a href="" target="_blank">国产鲜果</a></dt>
-									<dd></dd>
-								</dl>
-								<dl>
-									<dt>推荐产地</dt>
-									<dd class="brand_cata cle">
-										<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/luffy.png"></a>
-										<a href=""	target="_blank"><img alt="美国" src="../assets/img/zero.png"></a>
-										<a href=""	target="_blank"><img alt="泰国" src="../assets/img/sanji.png"></a>
-										<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/nami.png"></a>
-									</dd>
-								</dl>
-							</div>
-							<div class="J_subView" style="display: none;">
-								<dl>
-									<dt><a href="" target="_blank">水果减肥</a></dt>
-									<dd></dd>
-								</dl>
-								<dl>
-									<dt><a href="" target="_blank">水果美容</a></dt>
-									<dd></dd>
-								</dl>
-								<dl>
-									<dt><a href="" target="_blank">妊娠果谱</a></dt>
-									<dd></dd>
-								</dl>
-								<dl>
-									<dt>推荐产地</dt>
-									<dd class="brand_cata cle">
-										<a href=""	target="_blank"><img alt="墨西哥" src="../assets/img/luffy.png"></a>
-										<a href=""	target="_blank"><img alt="美国" src="../assets/img/luffy.png"></a>
-										<a href=""	target="_blank"><img alt="泰国" src="../assets/img/luffy.png"></a>
-										<a href=""	target="_blank"><img alt="新西兰" src="../assets/img/luffy.png"></a>
-									</dd>
-								</dl>
-							</div>
-								<div class="J_subView" style="display: none;">
-									<dl>
-											<dt><a href="" target="_blank">营养低糖</a></dt>
-											<dd></dd>
-									</dl>
-									<dl>
-											<dt><a href="" target="_blank">好咬好嚼</a></dt>
-											<dd></dd>
-									</dl>
-									<dl>
-											<dt>推荐产地</dt>
-											<dd class="brand_cata cle">
-									<a href=""	target="_blank"><img alt="墨西哥" src=""	title="墨西哥"></a>
-									<a href=""	target="_blank"><img alt="美国" src=""	title="美国"></a>
-									<a href=""	target="_blank"><img alt="泰国" src=""	title="泰国"></a>
-									<a href=""	target="_blank"><img alt="新西兰" src=""	title="新西兰"></a> </dd>
-									</dl>
-								</div>
-						</div>
 				</div>
 				<ul class="sub_nav cle" id="sub_nav">
 					<!-- 我们可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
