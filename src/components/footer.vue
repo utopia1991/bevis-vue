@@ -4,6 +4,11 @@
 
 <template>
 	<div class="footer">
+    <span class="footer-back-top" @click="backTotop">
+      <a class="footer-back-top-inner">
+        返回顶部
+      <a>
+    </span>
 		<div class="footer-main">
 			<ul>
 				<!-- v-if="" 条件渲染 -->
@@ -102,10 +107,9 @@
 		}
 	},
 	methods: {
-		doSomething () {
-			// ps:在vue里字符串被规定位要用单引号,且注释的时候双斜杆后面要用空格
-			console.log('Bevis is a awesome man!')
-		}
+    backTotop () {
+      document.body.scrollTop = 0
+    }
 	}
 }
 </script>

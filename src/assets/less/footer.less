@@ -1,9 +1,29 @@
 @import 'common.less';
 
+
 .footer {
 	height: 200px;
 	width: 100%;
 	background: @defaultColor;
+  .footer-back-top {
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 210px;
+    font-size: 14px;
+    border: 1px solid #000;
+    text-align: center;
+    .footer-back-top-inner {
+      display: inline-block;
+      height: 30px;
+      width: 60px;
+      margin: 4px;
+      cursor: pointer;
+      line-height: 30px;
+      background: @defaultColor;
+      color: @white;
+    }
+  }
 	.footer-main {
 		width: @containWidth;
 		margin: 50px auto 0;
