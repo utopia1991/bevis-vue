@@ -1,12 +1,12 @@
 <style lang="less" scoped>
-	// @import '../assets/css/appSlider.less';
+	@import '../../assets/less/index/indexSlider.less';
 </style>
 
 <template>
-	<div id="container">
+	<div class="slider">
 		<swipe id="slider" :show-indicators="true" :auto="3000" :speed="1000" :no-drag="true">
 			<swipe-item v-for="background in backgrounds" class="slide">
-				<img v-bind:src="background.image">
+				<a :class="background.image"></a>
 			</swipe-item>
 		</swipe>
 	</div>
@@ -23,10 +23,10 @@
 			return {
 				backgrounds: [
 					{
-						image: 'static/img/banner/slide_1.jpg'
+						image: 'slide-1'
 					},
 					{
-						image: 'static/img/banner/slide_2.jpg'
+						image: 'slide-2'
 					}
 				]
 			}
