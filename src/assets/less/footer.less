@@ -1,0 +1,81 @@
+@import 'common.less';
+
+.footer {
+	height: 200px;
+	width: 100%;
+	background: @defaultColor;
+	.footer-main {
+		width: @containWidth;
+		margin: 50px auto 0;
+		ul {
+			.default-logo {
+				background-size: cover;
+				background-position: center;
+			}
+			li {
+				height: 78px;
+				width: 80px;
+				line-height: 25px;
+				display: inline-block;
+				text-align: center;
+				border-radius: 50%;
+				margin: 20px;
+				transition: 1s linear;
+				&:hover {
+					a {
+						color: @defaultColor;
+					}
+				}
+				a {
+					font-size: 14px;
+					color: @white;
+				}
+			}
+			.luffyLogo {
+				background: url('../images/logo/luffy.gif') no-repeat;
+				.default-logo;
+			}
+			.zeroLogo {
+				background: url('../images/logo/zero.gif') no-repeat;
+				.default-logo;
+			}
+			.sanjiLogo {
+				background: url('../images/logo/sanji.gif') no-repeat;
+				.default-logo;
+			}
+			.namiLogo {
+				background: url('../images/logo/nami.gif') no-repeat;
+				.default-logo;
+			}
+			.chopperLogo {
+				background: url('../images/logo/chopper.gif') no-repeat;
+				.default-logo;
+			}
+			.frankLogo {
+				background: url('../images/logo/frank.gif') no-repeat;
+				.default-logo;
+			}
+			.usoppLogo {
+				background: url('../images/logo/usopp.gif') no-repeat;
+				.default-logo;
+			}
+			.robbinLogo {
+				background: url('../images/logo/robbin.gif') no-repeat;
+				.default-logo;
+			}
+			.brookLogo {
+				background: url('../images/logo/brook.gif') no-repeat;
+				.default-logo;
+			}
+		}
+	}
+	.footer-nav {
+		width: @containWidth;
+		margin: 20px auto;
+		a {
+			color: @white;
+			font-size: 14px;
+			margin: 10px 20px;
+		}
+	}
+}

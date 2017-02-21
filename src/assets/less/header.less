@@ -1,0 +1,174 @@
+@import 'common.less';
+
+.header {
+	width: 100%;
+	height: 200px;
+	background: @defaultColor;
+
+	.header-center {
+		width: @containWidth;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header-font {
+		display: inline-block;
+		font-size: 13px;
+		color: @white;
+	}
+	.header-li {
+		display: inline-block;
+		list-style: none;
+	}
+
+	.bar {
+		.header-center;
+		background: @defaultColor;
+		height: 32px;
+		line-height: 30px;
+		a, s, li {
+			.header-font;
+			.header-li;
+		}
+		.welcome, .userinfo {
+			a:first-child {
+				margin-right: 10px;
+			}
+			a:last-child {
+				margin-left: 10px;
+			}
+		}
+		.welcome {
+			float: left;
+		}
+		.userinfo {
+			float: right;
+		}
+	}
+
+	.main {
+		width: 100%;
+		background: @white;
+		height: 134px;
+		line-height: 134px;
+		.main-center {
+			.header-center;
+		}
+
+		.main-align {
+			height: 90px;
+			float: left;
+		}
+
+		.logo {
+			.main-align;
+			width: 10%;
+			max-width: 90px;
+			margin-right: 10%;
+			margin-top: 22px;
+			border: 1px solid @defaultColor;
+			.logo-luffy {
+				width: 90%;
+				height: 90%;
+				display: inline-block;
+				margin: 5%;
+				background: url('../images/logo/logo.png') no-repeat;
+				background-color: #000;
+				background-size: cover;
+				background-position: center;
+			}
+		}
+		.search {
+			width: 54%;
+			.main-align;
+			position: relative;
+			form {
+				position: relative;
+				height: 35px;
+				width: @containWidth;
+				margin-top: 30px;
+				border: 2px solid @defaultColor;
+				.form-defaut {
+					position: relative;
+					height: 100%;
+					border: 0;
+					outline: none;
+				}
+				input {
+					.form-defaut;
+					float: left;
+					width: @containWidth;
+					border: 0;
+					text-indent: 10px;
+				}
+				button {
+					cursor: pointer;
+					.form-defaut;
+					background: @defaultColor;
+					color: @white;
+					float: right;
+					width: 18%;
+				}
+			}
+			.search-hot {
+				height: 30px;
+				line-height: 30px;
+				margin-top: 10px;
+				font-size: 12px;
+				a {
+					color: #000;
+					font-size: 12px;
+					margin-right: 20px;
+				}
+			}
+		}
+		.intro {
+			float: right;
+			width: 25%;
+			height: 90px;
+			line-height: 40px;
+			margin-top: 20px;
+			text-align: center;
+			a {
+				height: 20px;
+				line-height: 20px;
+				font-size: 16px;
+				font-weight: bold;
+				color: @defaultColor;
+				display: inline-block;
+			}
+			p {
+				width: 100%;
+				height: 25px;
+				text-align: center;
+				font-size: 14px;
+				span {
+					height: 12px;
+					font-size: 10px;
+					padding: 2px 3px;
+					border: 2px solid @white;
+					background: @defaultColor;
+					color: @white;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+
+	.nav {
+		.header-center;
+		background: @defaultColor;
+		height: 32px;
+		line-height: 30px;
+		a {
+			.header-font;
+			margin-right: 25px;
+		}
+		ul {
+			display: inline-block;
+			li {
+				margin-right: 25px;
+				.header-li;
+			}
+		}
+	}
+}
