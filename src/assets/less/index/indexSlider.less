@@ -1,0 +1,27 @@
+@import '../common.less';
+
+.slider {
+	width: @containWidth;
+	height: 240px;
+	background: @defaultColor;
+	text-align: center;
+	border: 1px solid @defaultColor;
+	margin: 0 auto;
+
+	.slide-default {
+		display: inline-block;
+		height: 100%;
+		width: 80%;
+		background-position: center;
+		background-size: contain;
+	}
+
+	.slide-1 {
+		background: url('../../images/slide/slide_1.jpg') no-repeat;
+		.slide-default;
+	}
+	.slide-2 {
+		background: url('../../images/slide/slide_2.jpg') no-repeat;
+		.slide-default;
+	}
+}

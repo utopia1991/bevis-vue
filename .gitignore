@@ -9,4 +9,4 @@ npm-debug.log
 # Webstorm.
 .idea
 
-!/src
+!/src/assets
