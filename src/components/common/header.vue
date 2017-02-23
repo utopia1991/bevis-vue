@@ -1,6 +1,6 @@
 <!-- 使用 lang="less" 或者其他预编译直接可以使用, 添加 "scoped" 参数可以限制这个css央视只在这个模块使用 -->
 <style lang="less" scoped>
-	@import '../assets/less/header.less';
+	@import '../../assets/less/header.less';
 </style>
 
 <template>
