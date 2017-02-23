@@ -67,14 +67,12 @@
 			margin-top: 22px;
 			border: 1px solid @defaultColor;
 			.logo-luffy {
-				width: 90%;
-				height: 90%;
-				display: inline-block;
 				margin: 5%;
 				background: url('../images/logo/logo.png') no-repeat;
 				background-color: #000;
-				background-size: cover;
-				background-position: center;
+				.imageBack;
+				width: 90%;
+				height: 90%;
 			}
 		}
 		.search {
@@ -159,15 +157,27 @@
 		background: @defaultColor;
 		height: 32px;
 		line-height: 30px;
-		a {
+		.nav-title {
 			.header-font;
-			margin-right: 25px;
+			margin-right: 2%;
+			width: 10%;
+			overflow: hidden;
+			height: 32px;
+			line-height: 30px;
+			float: left;
 		}
 		ul {
+			width: 80%;
+			height: 32px;
+			line-height: 30px;
 			display: inline-block;
+			overflow: hidden;
 			li {
-				margin-right: 25px;
 				.header-li;
+				margin-right: 4%;
+				a {
+					.header-font;
+				}
 			}
 		}
 	}

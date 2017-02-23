@@ -4,25 +4,26 @@
 	height: 170px;
 	width: 100%;
 	background: @defaultColor;
-  .footer-back-top {
-    display: inline-block;
-    position: fixed;
-    right: 30px;
-    bottom: 180px;
-    font-size: 14px;
-    border: 1px solid #000;
-    text-align: center;
-    .footer-back-top-inner {
-      display: inline-block;
-      height: 30px;
-      width: 60px;
-      margin: 4px;
-      cursor: pointer;
-      line-height: 30px;
-      background: @defaultColor;
-      color: @white;
-    }
-  }
+	.footer-back-top {
+		display: inline-block;
+		position: fixed;
+		right: 30px;
+		bottom: 180px;
+		font-size: 14px;
+		border: 1px solid #000;
+		text-align: center;
+		.animation;
+		.footer-back-top-inner {
+			display: inline-block;
+			height: 30px;
+			width: 60px;
+			margin: 4px;
+			cursor: pointer;
+			line-height: 30px;
+			background: @defaultColor;
+			color: @white;
+		}
+	}
 	.footer-main {
 		width: @containWidth;
 		margin: 50px auto 0;
@@ -39,15 +40,10 @@
 				text-align: center;
 				border-radius: 50%;
 				margin: 20px;
-				transition: 1s linear;
-				&:hover {
-					a {
-						color: @defaultColor;
-					}
-				}
 				a {
 					font-size: 14px;
 					color: @white;
+					line-height: 180px;
 				}
 			}
 			.luffyLogo {

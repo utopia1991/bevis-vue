@@ -9,7 +9,8 @@
 	.wanted-captain {
 		width: 100%;
 		height: 400px;
-		border: 1px solid #000;
+		border: 1px solid @defaultColor;
+		.animation;
 		.wanted-captain-box {
 			width: 98%;
 			height: 380px;
@@ -20,14 +21,10 @@
 				width: 38%;
 				height: 100%;
 				display: inline-block;
+				border: 1px solid @defaultColor;
 				.luffy {
-					border: 1px solid #000;
-					display: inline-block;
-					width: 100%;
-					height: 100%;
 					background: url('../../images/heros/luffy.png') no-repeat;
-					background-position: center;
-					background-size: cover;
+					.imageBack;
 				}
 			}
 			.price {
@@ -40,29 +37,56 @@
 				.captain {
 					font-size: 50px;
 					margin-bottom: 30px;
-					transition: 0.5s linear;
+					margin-top: 30px;
 					cursor: pointer;
-					&:hover {
-						color: @defaultHoverColor;
-					}
+					.fontAnimation;
 				}
 				.bd {
 					font-size: 40px;
 					height: 60px;
 					line-height: 60px;
 					margin: 30px 0;
-					transition: 0.5s linear;
-					&:hover {
-						color: @defaultHoverColor;
-					}
+					.fontAnimation;
 				}
 				.sale {
-					bottom: 0px;
-					text-align: right;
+					position: absolute;
+					right: 10px;
 					font-size: 30px;
-					transition: 0.5s linear;
-					&:hover {
-						color: @defaultHoverColor;
+					bottom: 10px;
+					.fontAnimation;
+				}
+			}
+		}
+	}
+	.wanted-main {
+		width: 103%;
+		margin: 30px auto;
+		position: relative;
+		left: -1%;
+		ul {
+			width: 103%;
+			li {
+				display: inline-block;
+				width: 22%;
+				height: 300px;
+				list-style: none;
+				border: 1px solid @defaultColor;
+				margin: 10px 1%;
+				.animation;
+				.pic {
+					height: 220px;
+					margin: 10px;
+					border: 1px solid @defaultColor;
+					a {
+						.imageBack;
+					}
+				}
+				h3, .price {
+					margin: 10px;
+				}
+				.price {
+					.sale {
+						float: right;
 					}
 				}
 			}

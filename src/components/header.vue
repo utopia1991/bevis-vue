@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="nav">
-			<a href="html/allCategory.html"	target="_blank">路飞海贼团</a>
-			<ul class="sub_nav cle" id="sub_nav">
+			<a href="/allCategory" class="nav-title">路飞海贼团</a>
+			<ul class="sub_nav">
 				<!-- 我们可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
 				<li v-for="tab in tabs" v-bind:class="{ current:tab.isActive }">
 					<a :href="tab.url">{{tab.name}}</a>

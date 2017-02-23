@@ -7,8 +7,8 @@ a {
 	text-decoration: none;
 }
 
-.cleafix {
-	clear: both;
+li {
+	list-style: none;
 }
 
 @defaultColor: #000;
@@ -18,3 +18,31 @@ a {
 @containWidth: 80%;
 
 @defaultHoverColor: #34507f;
+
+.cleafix {
+	clear: both;
+}
+
+.animation {
+	transition: all .4s linear;
+	&:hover {
+		transform: translateY(4px);
+		box-shadow: 4px 4px;
+	}
+}
+
+.fontAnimation {
+	transition: all .4s linear;
+	&:hover {
+		color: @defaultHoverColor;
+	}
+}
+
+.imageBack {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
