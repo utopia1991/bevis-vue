@@ -1,27 +1,26 @@
 <style scoped lang="less">
-	// @import '../assets/css/appContentWanted.less';
+	@import '../../assets/less/index/indexWanted.less';
 </style>
 
 <template>
-	<div class="wanted_box">
+	<div class="wanted-box">
 		<h2>WANTED</h2>
-		<div class="wanted_captain">
-			<div class="wanted_captain_box">
+		<div class="wanted-captain">
+			<div class="wanted-captain-box">
 				<p class="pic">
-					<img v-lazy="captainUrl">
+					<a class="luffy"></a>
 				</p>
-				<p class="price">
-					<span class="captain">{{captainName}}</span>
-					<span class="bd">
-						<strong>${{captainPrice}}</strong>
-						<span class="sale">
-							<b>{{captainMethod}}</b>
-						</span>
-					</span>
-				</p>
+				<div class="price">
+					<p class="captain">{{captainName}}</p>
+					<p class="bd">${{captainPrice}}</p>
+					<p class="sale">
+						<b>{{captainMethod}}</b>
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="wanted_main">
+
+		<div class="wanted-main">
 			<ul class="wanted_list cle" id="wanted_list">
 				<li class="show" v-for="character in characters">
 					<a :href="character.link" target="_blank">
@@ -58,7 +57,6 @@
 		data () {
 			return {
 				captainName: 'Monkey D Luffy',
-				captainUrl: 'static/img/luffy.png',
 				captainPrice: '500,000,000',
 				captainMethod: 'DEAD OR ALIVE',
 				characters: [
