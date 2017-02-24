@@ -1,17 +1,17 @@
 <template>
 	<div class="main">
 		<top></top>
-		sdadasd
+		luffy
 		<bottom></bottom>
 	</div>
 </template>
 
 <script>
-	import top from './header'
-	import bottom from './footer'
+	import top from '../components/common/header'
+	import bottom from '../components/common/footer'
 
 	export default {
-		name: 'app',
+		name: 'luffy',
 		components: {
 			top,
 			bottom

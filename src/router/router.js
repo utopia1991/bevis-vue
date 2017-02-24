@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from 'views/index'
 
 Vue.use(Router)
 
@@ -9,7 +8,12 @@ export default new Router({
 		{
 			path: '/',
 			name: 'app',
-			component: Index
+			component: require('views/index')
+		},
+		{
+			path: '/luffy',
+			name: 'luffy',
+			component: require('views/luffy')
 		}
 	]
 })
