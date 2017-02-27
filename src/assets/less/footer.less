@@ -1,7 +1,7 @@
 @import 'common.less';
 
 .footer {
-	height: 170px;
+	height: auto;
 	width: 100%;
 	background: @defaultColor;
 	.footer-back-top {
@@ -34,7 +34,8 @@
 			}
 			li {
 				height: 78px;
-				width: 80px;
+				width: 10%;
+				max-width: 80px;
 				line-height: 25px;
 				display: inline-block;
 				text-align: center;
@@ -86,7 +87,10 @@
 	}
 	.footer-nav {
 		width: @containWidth;
-		margin: 15px auto;
+		padding: 10px 0 20px 0;
+		margin-left: auto;
+		line-height: 20px;
+		margin-right: auto;
 		a {
 			color: @white;
 			font-size: 14px;

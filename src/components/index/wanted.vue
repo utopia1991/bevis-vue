@@ -8,10 +8,10 @@
 		<div class="wanted-captain">
 			<div class="wanted-captain-box">
 				<p class="pic">
-					<a class="luffy" href="/luffy"></a>
+					<router-link class="luffy" to="/luffy"></router-link>
 				</p>
 				<div class="price">
-					<p class="captain">{{captainName}}</p>
+					<router-link class="captain" to="/luffy">{{captainName}}</router-link>
 					<p class="bd">${{captainPrice}}</p>
 					<p class="sale">
 						<b>{{captainMethod}}</b>

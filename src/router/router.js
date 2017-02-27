@@ -7,7 +7,12 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			name: 'app',
+			name: 'index',
+			component: require('views/index')
+		},
+		{
+			path: '/index',
+			name: 'index',
 			component: require('views/index')
 		},
 		{
