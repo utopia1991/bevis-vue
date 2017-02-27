@@ -87,7 +87,7 @@ export default {
 			],
 			tabs: [
 				{
-					url: '/hero/index',
+					url: '/index',
 					isActive: true,
 					name: '首页'
 				},
