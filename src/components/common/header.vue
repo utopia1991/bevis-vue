@@ -87,44 +87,44 @@ export default {
 			],
 			tabs: [
 				{
-					url: '/index',
+					url: '/hero/index',
 					isActive: true,
 					name: '首页'
 				},
 				{
-					url: '/luffy',
+					url: '/hero/luffy',
 					name: '路飞'
 				},
 				{
-					url: '/zero',
+					url: '/hero/zero',
 					name: '索隆'
 				},
 				{
-					url: '/sanji',
+					url: '/hero/sanji',
 					name: '山治'
 				},
 				{
-					url: '/nami',
+					url: '/hero/nami',
 					name: '娜美'
 				},
 				{
-					url: '/usopp',
+					url: '/hero/usopp',
 					name: '乌索普'
 				},
 				{
-					url: '/chopper',
+					url: '/hero/chopper',
 					name: '乔巴'
 				},
 				{
-					url: '/robin',
+					url: '/hero/robin',
 					name: '罗宾'
 				},
 				{
-					url: '/frank',
+					url: '/hero/frank',
 					name: '弗兰克'
 				},
 				{
-					url: '/brook',
+					url: '/hero/brook',
 					name: '布鲁克'
 				}
 			]

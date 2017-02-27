@@ -4,11 +4,11 @@
 
 <template>
 	<div class="footer">
-    <span class="footer-back-top" @click="backTotop">
-      <a class="footer-back-top-inner">
-        返回顶部
-      <a>
-    </span>
+		<span class="footer-back-top" @click="backTotop">
+			<a class="footer-back-top-inner">
+				返回顶部
+			<a>
+		</span>
 		<div class="footer-main">
 			<ul>
 				<!-- v-if="" 条件渲染 -->

@@ -1,24 +1,12 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
 	routes: [
-		{
-			path: '/',
-			name: 'index',
-			component: require('views/index')
-		},
-		{
-			path: '/index',
-			name: 'index',
-			component: require('views/index')
-		},
-		{
-			path: '/luffy',
-			name: 'luffy',
-			component: require('views/luffy')
-		}
+		{ path: '/', component: require('views/index') },
+		{ path: '/index', redirect: '/' },
+		{ path: '/hero/:id', component: require('views/hero') }
 	]
 })
