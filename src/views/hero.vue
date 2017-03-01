@@ -6,7 +6,16 @@
 	<div class="main">
 		<top></top>
 		<div class="hero">
-			<h1>{{ $route.params.id }}</h1>
+			<div class="hero-img">
+				<img :src="'../static/images/heros/'+$route.params.id+'.png'" :alt="$route.params.id">
+			</div>
+			<div class="hero-tro">
+				<h1>{{hero[$route.params.id].fullName}}</h1>
+				<h2>{{hero[$route.params.id].price}}</h2>
+				<p class="hero-intro">
+					{{hero[$route.params.id].troduction}}
+				</p>
+			</div>
 		</div>
 		<bottom></bottom>
 	</div>
@@ -15,9 +24,15 @@
 <script>
 	import top from '../components/common/header'
 	import bottom from '../components/common/footer'
+	import hero from '../model/hero'
 
 	export default {
 		name: 'hero',
+		data() {
+			return {
+				hero
+			}
+		},
 		components: {
 			top,
 			bottom

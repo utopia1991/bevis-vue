@@ -14,12 +14,12 @@
 				<!-- v-if="" 条件渲染 -->
 				<!-- v-bind:function 可以直接缩写成为 :function,  v-on:function 可以直接缩写成为 @function-->
 				<li :class="luffy.imgClass">
-					<a v-if="github" v-bind:href="githubUrl" target="_blank">{{luffy.name}}</a>
+					<router-link v-if="captain" :to="captainUrl">{{luffy.name}}</router-link>
 				</li>
 				<li v-for="share in shares" :class="share.imgClass">
-					<a :href="share.url">
+					<router-link :to="share.url">
 						{{share.name}}
-					</a>
+					</router-link>
 				</li>
 			</ul>
 			<div class="footer-nav">
@@ -33,51 +33,51 @@
 	export default {
 	data () {
 		return {
-			github: true,
-			githubUrl: '',
+			captain: true,
+			captainUrl: '/hero/luffy',
 			luffy: {
 				name: 'LUFFY',
 				imgClass: 'luffyLogo'
 			},
 			shares: [
 				{
-					name: 'ZERO',
-					url: '',
-					imgClass: 'zeroLogo'
+					name: 'zoro',
+					url: '/hero/zoro',
+					imgClass: 'zoroLogo'
 				},
 				{
 					name: 'SANJI',
-					url: '',
+					url: '/hero/sanji',
 					imgClass: 'sanjiLogo'
 				},
 				{
 					name: 'NAMI',
-					url: '',
+					url: '/hero/nami',
 					imgClass: 'namiLogo'
 				},
 				{
 					name: 'USOPP',
-					url: '',
+					url: '/hero/usopp',
 					imgClass: 'usoppLogo'
 				},
 				{
 					name: 'CHOPPER',
-					url: '',
+					url: '/hero/chopper',
 					imgClass: 'chopperLogo'
 				},
 				{
 					name: 'ROBBIN',
-					url: '',
+					url: '/hero/robbin',
 					imgClass: 'robbinLogo'
 				},
 				{
 					name: 'FRANK',
-					url: '',
+					url: '/hero/frank',
 					imgClass: 'frankLogo'
 				},
 				{
 					name: 'BROOK',
-					url: '',
+					url: '/hero/brook',
 					imgClass: 'brookLogo'
 				}
 			],

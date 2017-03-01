@@ -19,7 +19,7 @@
 		<div class="main">
 			<div class="main-center">
 				<div class="logo">
-					<a href="" class="logo-luffy"></a>
+					<router-link to="/" class="logo-luffy"></router-link>
 				</div>
 				<div class="search">
 					<form>
@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="nav">
-			<a href="/allCategory" class="nav-title">路飞海贼团</a>
+			<router-link to="/allCategory" class="nav-title">路飞海贼团</router-link>
 			<ul class="sub_nav">
 				<!-- 可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
 				<li v-for="tab in tabs" v-bind:class="{ current:tab.isActive }">
@@ -96,7 +96,7 @@ export default {
 					name: '路飞'
 				},
 				{
-					url: '/hero/zero',
+					url: '/hero/zoro',
 					name: '索隆'
 				},
 				{
@@ -116,7 +116,7 @@ export default {
 					name: '乔巴'
 				},
 				{
-					url: '/hero/robin',
+					url: '/hero/robbin',
 					name: '罗宾'
 				},
 				{

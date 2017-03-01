@@ -51,9 +51,9 @@
 				captainMethod: 'DEAD OR ALIVE',
 				characters: [
 					{
-						link: '/hero/zero',
-						name: 'Zero',
-						imgUrl: 'static/images/heros/zero.png',
+						link: '/hero/zoro',
+						name: 'zoro',
+						imgUrl: 'static/images/heros/zoro.png',
 						price: '3亿',
 						method: 'DEAD OR ALIVE'
 					},
@@ -86,9 +86,9 @@
 						method: 'DEAD OR ALIVE'
 					},
 					{
-						link: '/hero/robin',
+						link: '/hero/robbin',
 						name: 'Robin',
-						imgUrl: 'static/images/heros/robin.png',
+						imgUrl: 'static/images/heros/robbin.png',
 						price: '1.0亿',
 						method: 'DEAD OR ALIVE'
 					},

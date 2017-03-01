@@ -3,4 +3,39 @@
 .hero {
 	width: @containWidth;
 	margin:20px auto;
+	padding: 10px;
+	height: 450px;
+	.hero-img {
+		display: inline-block;
+		width: 40%;
+		margin-right: 4%;
+		height: 100%;
+		float: left;
+		img {
+			border: 2px solid @defaultColor;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.hero-tro {
+		display: inline-block;
+		width: 53%;
+		height: 100%;
+		h1 {
+			font-size: 50px;
+			height: 60px;
+			line-height: 60px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		h2 {
+			font-size: 25px;
+			height: 60px;
+			line-height: 60px;
+		}
+		.hero-intro {
+			font-size: 16px;
+			margin-top: 10px;
+		}
+	}
 }

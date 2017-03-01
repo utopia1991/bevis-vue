@@ -1,0 +1,47 @@
+{
+	"luffy": {
+		"fullName" : "monkey d luffy",
+		"price" : "500,000,000",
+		"troduction" : "Also known as \"Straw Hat Luffy\" and commonly as \"Straw Hat\", is the main protagonist of the manga and anime, One Piece. He is the son of the Revolutionary leader Monkey D. Dragon, the grandson of the Marine hero Monkey D. Garp, the sworn brother of late \"Fire Fist\" Portgas D. Ace and Revolutionary chief of staff Sabo, and the foster son of Curly Dadan. Luffy is a pirate and his lifelong dream is to become the Pirate King by finding the legendary treasure left behind by the late Pirate King, Gol D. Roger. He believes that being Pirate King means having the most freedom in the world. He has eaten the Gomu Gomu no Mi, which gives the consumer's body the properties of rubber. As the founder and captain of the Straw Hat Pirates, he is the first member of the crew, as well as one of its top three fighters."
+	},
+	"zoro": {
+		"fullName" : "roronoa zoro",
+		"price" : "300,000,000",
+		"troduction" : "Also known as \"Pirate Hunter\" Zoro, is a pirate and a former bounty and awesome hunter. \n He was the first member to join the Straw Hat Pirates, and, to date, is considered the largest threat and most dangerous member in the crew after Luffy. His fame as a master swordsman and his great strength, along with the actions of his captain, sometimes led others to believe he was the true captain of the crew. He is one of the top three fighters in the crew alongside Luffy and Sanji, and his dream is to become the greatest swordsman in the world. Zoro is regarded as one of twelve pirates who are referred to as the \"Worst Generation\" (formerly known as the \"Eleven Supernovas\")."
+	},
+	"sanji": {
+		"fullName" : "vinsmoke Sanji",
+		"price" : "177,000,000",
+		"troduction" : "Most commonly known by his moniker \"Black Leg\" Sanji, is a pirate and the cook of the Straw Hat Pirates, the former sous chef of Baratie, and the third son of the Vinsmoke Family, making him a prince of the Germa Kingdom. He is officially the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc. Since he was born in North Blue, he is the first Straw Hat not to originate from East Blue. He is one of the Monster Trio in the crew alongside Luffy and Zoro. His dream is to find the rumored All Blue, which is where East Blue, West Blue, North Blue, and South Blue meet along with their wildlife, a chef's paradise. He has a bounty of Beli 177,000,000, which is only valid if captured alive, per the request of his father."
+	},
+	"nami": {
+		"fullName" : "burglar nami",
+		"price" : "66,000,000",
+		"troduction" : "Nami is a pirate and the navigator of the Straw Hat Pirates. She was the third member of the crew and the second to join, doing so during the Orange Town Arc.[11] She was formerly a member of the Arlong Pirates and initially joined the Straw Hats in order to rob them for her real crew, but joined the Straw Hats for real after they rebelled against Arlong.[12] She has a bounty of Beli 66,000,000."
+	},
+	"usopp": {
+		"fullName" : "usopp",
+		"price" : "30,000,000",
+		"troduction" : "\"God\" Usopp is the sniper of the Straw Hat Pirates, and the former captain of the Usopp Pirates. When Usopp was first introduced, he was often (comically) labeled as the \"Liar\" of the Straw Hat Pirates, due to the \"Uso\" in his name meaning \"lie\" or \"falsehood\". He was born in Syrup Village, and was first mentioned by Yasopp, his father. He was officially the third (unofficially fourth) member of the crew, and the third to join, and, including Nami and Robin, also the third to rejoin, doing so at the end of the Post-Enies Lobby Arc. His original bounty of Beli 30,000,000 was credited to his alias and alter-ego \"Sogeking\". During the events in Dressrosa, Usopp awakened his Kenbunshoku Haki,[10] making him the fourth member of the Straw Hat crew to demonstrate and use a form of Haki. His current bounty, Beli 200,000,000, is a huge jump from his original, due to his role as \"God\" for saving all the toy slaves in Doflamingo's underground trades."
+	},
+	"chopper": {
+		"fullName" : "tony tony chopper",
+		"price" : "100",
+		"troduction" : "Also known as \"Cotton Candy Lover\" Chopper, is the doctor of the Straw Hat Pirates. Chopper is a reindeer that ate a Devil Fruit called the Hito Hito no Mi. He came from Drum Island where he learned how to be a doctor, which also makes him the only member of the Straw Hat Pirates who was born on the Grand Line. He is the sixth member of the crew and the fifth to join Luffy, as well as being the youngest member on board. He has a bounty of Beli 100 due to being mistaken for the crew's pet."
+	},
+	"robbin": {
+		"fullName" : "nico robbin",
+		"price" : "130,000,000",
+		"troduction" : "Nico Robbin, also known by her epithet \"Devil Child\", is the archaeologist of the Straw Hat Pirates. She was originally introduced as the vice president of Baroque Works and secondary antagonist of the Alabasta Saga, known as Miss All Sunday, before joining the Straw Hats. She is the seventh member of the crew, the sixth to join, and like Nami, is the second to rejoin, doing so near the end of the Enies Lobby Arc. Robin is also the first member to have once been an antagonist. She ate the Hana Hana no Mi.During the Post-War Arc, she became involved with the Revolutionaries for two years. Her dream is to find the Rio Poneglyph which tells the true history. She currently holds a bounty of Beli 130,000,000."
+	},
+	"frank": {
+		"fullName" : "franky",
+		"price" : "94,000,000",
+		"troduction" : "\"Iron Man\" Franky is the shipwright for the Straw Hat Pirates.\n A cyborg from Water 7, he was originally the leader of the Franky Family, a group of ship dismantlers. He is originally from South Blue, but left 32 years ago as a four-year-old child. He was originally named \"Cutty Flam\" until he threw away his original name for his nickname per the request of Iceburg to hide his identity.\n Franky and his followers were originally enemies of the Straw Hats until circumstances forced them to become allies. At the request of the Franky Family, Franky decided to join the Straw Hats to fulfill his dream of creating and riding a ship capable of circumnavigating the world, the Thousand Sunny. He is the eighth member of the Straw Hat crew and the seventh to join Luffy's crew. He currently has a bounty of Beli 94,000,000. Previously going by the epithet, \"Cyborg\" Franky, after most likely having his favourite weapon being confused as his main body by the authorities, he has since gained the new nickname, \"Iron Man\"."
+	},
+	"brook": {
+		"fullName" : "brook",
+		"price" : "83,000,000",
+		"troduction" : "\"Soul King\" Brook is the musician of the Straw Hat Pirates. He is a skeleton that the Straw Hats found on board of a ghost ship after drifting into the Florian Triangle. He is a Devil Fruit user who ate the Yomi Yomi no Mi, and is undead, having been brought back into a pseudo-immortal state because of its powers. He is the ninth member of the Straw Hat crew, and the eighth to join Luffy's crew, as well as being the oldest and the tallest member on board. He is also one of the two swordsmen onboard their current ship, with the other being Roronoa Zoro. He fills the role of the long-awaited musician that Luffy had wanted for his crew ever since his journey began. He currently has a bounty of Beli 83,000,000."
+	}
+}

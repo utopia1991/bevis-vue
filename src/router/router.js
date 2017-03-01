@@ -8,6 +8,7 @@ export default new VueRouter({
 	routes: [
 		{ path: '/', component: require('views/index') },
 		{ path: '/index', redirect: '/' },
+		{ path: '/pirates', component: require('views/pirates') },
 		{ path: '/hero/:id', component: require('views/hero') }
 	]
 })
