@@ -1,9 +1,74 @@
 @import '../common.less';
 
-.pirates {
-	width: @containWidth;
-	margin:20px auto;
-	h1 {
-		font-size: 50px;
+.main {
+	background: @defaultColor;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	#meteor {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.pirates {
+		position: absolute;
+		color: #fff;
+		text-align: center;
+		z-index: 10;
+		background: rgba(255,255,255,.1);
+		height: 600px;
+		width: 60%;
+		top: 50%;
+		left: 50%;
+		margin-top: -300px;
+		margin-left: -30%;
+
+		h1 {
+			height: 100px;
+			line-height: 100px;
+			font-size: 50px;
+		}
+
+		.pirates-img {
+			width: 70%;
+			margin: 0 auto 30px;
+			height: 400px;
+			img {
+				border: 1px solid #fff;
+				padding: 1%;
+				width: 98%;
+				height: 98%;
+				transition: background-color 0.2s, border-color 0.2s;
+
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.2);
+					border-color: rgba(255, 255, 255, 0.2);
+				}
+			}
+		}
+
+		.pirates-btn {
+			display: inline-block;
+			color: rgba(255, 255, 255, 0.7);
+			background-color: rgba(255, 255, 255, 0.08);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			border-radius: 0.3rem;
+			transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+			padding: 15px 40px;
+			margin: 0 10px;
+
+			&:hover {
+				text-decoration: none;
+				color: rgba(255, 255, 255, 0.8);
+				background-color: rgba(255, 255, 255, 0.2);
+				border-color: rgba(255, 255, 255, 0.3);
+			}
+		}
 	}
 }

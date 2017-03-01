@@ -13,6 +13,10 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+cd dist
+npm install -g http-server  # 该命令只需执行一次, 安装过之后, 以后就不需要重复安装了.
+hs  # 然后打开监听的ip就可以查看build之后的网站了
 ```
 
 <!-- ![](static/img/demo/Bevis-Vue.jpg "首页") -->

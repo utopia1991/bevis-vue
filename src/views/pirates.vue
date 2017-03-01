@@ -4,29 +4,29 @@
 
 <template>
 	<div class="main">
-		<top></top>
+		<div id="meteor"></div>
 		<div class="pirates">
-			<div class="">
-				<h1>Straw Hat Pirate</h1>
+			<h1>Straw Hat Pirate</h1>
+			<div class="pirates-img">
+				<img src="static/images/heros/pirates.jpg" alt="Straw Hat Pirate" />
 			</div>
+			<router-link to="/" class="pirates-btn">Go Back</router-link>
 		</div>
-		<bottom></bottom>
 	</div>
 </template>
 
 <script>
-	import top from '../components/common/header'
-	import bottom from '../components/common/footer'
+	require('particles.js/particles.js')
 
 	export default {
 		name: 'hero',
+		mounted() {
+			particlesJS.load('meteor', 'static/json/particles.json', () => {});
+		},
 		data() {
 			return {
+
 			}
-		},
-		components: {
-			top,
-			bottom
 		}
 	}
 </script>
