@@ -44,7 +44,7 @@
 			</div>
 		</div>
 		<div class="nav">
-			<router-link to="/allCategory" class="nav-title">路飞海贼团</router-link>
+			<router-link to="/pirates" class="nav-title">路飞海贼团</router-link>
 			<ul class="sub_nav">
 				<!-- 可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
 				<li v-for="tab in tabs" v-bind:class="{ current:tab.isActive }">
