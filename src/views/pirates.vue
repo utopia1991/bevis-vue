@@ -6,7 +6,19 @@
 	<div class="main">
 		<div id="meteor"></div>
 		<div class="pirates">
-			<h1>Straw Hat Pirate</h1>
+			<div class="animation-font">
+				<div class="container">
+					<p class="text">
+						Straw Hat Pirate
+					</p>
+					<ul class="list">
+						<li class="item">Luffy</li>
+						<li class="item">Zoro</li>
+						<li class="item">Sanji</li>
+						<li class="item">Nami</li>
+					</ul>
+				</div>
+			</div>
 			<div class="pirates-img">
 				<img src="static/images/heros/pirates.jpg" alt="Straw Hat Pirate" />
 			</div>
