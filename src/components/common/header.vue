@@ -12,7 +12,7 @@
 				<a href="/">免费注册</a>
 			</span>
 			<span class="userinfo">
-				<a href="/">我的海贼团</a>
+				<router-link to="/about">关于</router-link>
 				<a class="menu-link" href="https://github.com/utopia1991" target="_blank">关注我吧</a>
 			</span>
 		</div>
