@@ -7,6 +7,11 @@
 		<top></top>
 			<div class="usernyeart">
 				<div class="cont">
+					<div class="user">
+						<span class="inner">
+							<img :src="user.img" alt="">
+						</span>
+					</div>
 					<div class="snow">
 						<span v-for="flower in flowers">
 							<img :src="flower.url" :width="flower.width" :height="flower.height" alt="">
@@ -30,6 +35,9 @@
 		},
 		data () {
 			return {
+				user: {
+					img: 'static/images/logo/luffy.gif'
+				},
 				flowers: [
 					{
 						url: 'static/images/flowers/flower1.png',
