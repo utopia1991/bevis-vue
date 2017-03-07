@@ -4,22 +4,32 @@
 
 <template>
 	<div class="main">
-		<top></top>
-			<div class="usernyeart">
-				<div class="cont">
-					<div class="user">
-						<span class="inner">
-							<img :src="user.img" alt="">
-						</span>
+		<div class="loading" @click="isLoading = !isLoading" v-if="isLoading">
+			<canvas id="loading" width="200" height="200">Your browser does not support the HTML5 canvas tag.</canvas>
+			<p>
+				Click Me!
+			</p>
+		</div>
+		<transition name="fade" mode="out-in">
+			<div v-if="!isLoading">
+				<top></top>
+					<div class="usernyeart">
+						<div class="cont">
+							<div class="user">
+								<span class="inner">
+									<img :src="user.img" alt="">
+								</span>
+							</div>
+							<div class="snow">
+								<span v-for="flower in flowers">
+									<img :src="flower.url" :width="flower.width" :height="flower.height" alt="">
+								</span>
+							</div>
+						</div>
 					</div>
-					<div class="snow">
-						<span v-for="flower in flowers">
-							<img :src="flower.url" :width="flower.width" :height="flower.height" alt="">
-						</span>
-					</div>
-				</div>
+				<bottom></bottom>
 			</div>
-		<bottom></bottom>
+		</transition>
 	</div>
 
 </template>
@@ -35,6 +45,7 @@
 		},
 		data () {
 			return {
+				isLoading: true,
 				user: {
 					img: 'static/images/logo/luffy.gif'
 				},
@@ -101,6 +112,56 @@
 					},
 				]
 			}
+		},
+		// 页面加载完成立即执行js：mounted(){}
+		mounted() {
+			var waveWidth = 300,
+					offset = 0,
+					waveHeight = 8,
+					waveCount = 5,
+					startX = -100,
+					startY = 204,
+					progress = 0,
+					progressStep = 1,
+					d2 = waveWidth / waveCount,
+					d = d2 / 2,
+					hd = d / 2;
+			var c = document.getElementById("loading");
+			var ctx = c.getContext("2d");
+			var img = new Image();
+			ctx.fillStyle = "#111";
+
+			function tick() {
+				offset -= 5;
+				progress += progressStep;
+				if (progress > 220 || progress < 0) progressStep *= -1;
+				if (-1 * offset === d2) offset = 0;
+				ctx.clearRect(0, 0, c.width, c.height);
+				ctx.beginPath();
+				var offsetY = startY - progress;
+				ctx.moveTo(startX - offset, offsetY);
+				for (var i = 0; i < waveCount; i++) {
+						var dx = i * d2;
+						var offsetX = dx + startX - offset;
+						ctx.quadraticCurveTo(offsetX + hd, offsetY + waveHeight, offsetX + d, offsetY);
+						ctx.quadraticCurveTo(offsetX + hd + d, offsetY - waveHeight, offsetX + d2, offsetY);
+				}
+
+				ctx.lineTo(startX + waveWidth, 300);
+				ctx.lineTo(startX, 300);
+				ctx.fill();
+				//画布上已有的内容只会在它和新图形重叠的地方保留。新图形绘制于内容之后。
+				ctx.globalCompositeOperation = "destination-atop";
+				ctx.drawImage(img, 0, -1)
+				requestAnimationFrame(tick);
+			}
+			img.onload = function () {
+				tick();
+			};
+			img.src = 'static/images/logo/logo.png';
+		},
+		methods: {
+
 		}
 	}
 </script>

@@ -1,9 +1,43 @@
 @import '../common.less';
 
+.loading {
+	position: fixed;
+	z-index: 10;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	#loading {
+		position: absolute;
+		margin-left: -100px;
+		margin-top: -100px;
+		top: 50%;
+		left: 50%;
+	}
+	p {
+		position: absolute;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+		color: @defaultColor;
+		width: 100%;
+		text-align: center;
+		bottom: 180px;
+	}
+}
+
+// fade animation
+.fade-enter-active, .fade-leave-active {
+	transition: opacity 2s
+}
+.fade-enter, .fade-leave-active {
+	opacity: 0
+}
+
 .usernyeart {
 	width: @containWidth;
 	margin: 0 auto 20px;
-	background: #000;
+	background: @defaultColor;
 	height: 300px;
 	position: relative;
 	overflow: hidden;
@@ -19,14 +53,14 @@
 
 		.user {
 			position: absolute;
-			margin: 40px auto 0;
+			margin: 30px auto 0;
 			width: 100%;
 			text-align: center;
 
 			.inner {
 				display: inline-block;
-				height: 200px;
-				width: 200px;
+				height: 220px;
+				width: 220px;
 				border-radius: 50%;
 				border: 4px solid #fff;
 				text-align: center;

@@ -107,9 +107,9 @@
 		}
 	},
 	methods: {
-    backTotop () {
-      document.body.scrollTop = 0
-    }
+		backTotop () {
+			document.body.scrollTop = 0
+		}
 	}
 }
 </script>
