@@ -13,7 +13,7 @@
 		<transition name="fade" mode="out-in">
 			<div v-if="!isLoading">
 				<top></top>
-					<div class="usernyeart">
+					<div class="usernyeart" @click="shuffle">
 						<div class="cont">
 							<div class="user">
 								<span class="inner">
@@ -161,7 +161,21 @@
 			img.src = 'static/images/logo/logo.png';
 		},
 		methods: {
+			shuffle () {
+				//Fisher–Yates shuffle
+				Array.prototype.shuffleArray = function() {
+					var input = this;
+					for (var i = input.length-1; i >=0; i--) {
+						var randomIndex = Math.floor(Math.random()*(i+1));
+						var itemAtIndex = input[randomIndex];
+						input[randomIndex] = input[i]; input[i] = itemAtIndex;
+					}
+					return input;
+				}
 
+				var random = [1,2,3,4,5,6,7,8].shuffleArray();
+				console.log(random);
+			}
 		}
 	}
 </script>
