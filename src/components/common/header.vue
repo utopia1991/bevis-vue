@@ -31,7 +31,7 @@
 						热搜榜：
 						<!-- 我们可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
 						<!-- 双 Mustache 标签( {{}} )将数据解析为纯文本而不是 HTML。为了输出真的 HTML 字符串，需要用三 Mustache 标签： <div>{{{ raw_html }}}</div> -->
-						<a v-for="good in goods" v-bind:href="good.url" target="_blank">{{good.name}}</a>
+						<a v-for="good in goods" :href="good.url" target="_blank">{{good.name}}</a>
 					</p>
 				</div>
 				<div class="intro">
@@ -47,7 +47,7 @@
 			<router-link to="/pirates" class="nav-title">路飞海贼团</router-link>
 			<ul>
 				<!-- 可以传给 v-bind:class 一个对象，以动态地切换 class。注意 v-bind:class 指令可以与普通的 class 特性共存 -->
-				<li v-for="tab in tabs" :class="{ current:tab.isActive }">
+				<li v-for="tab in tabs">
 					<!-- 使用 <router-link> 创建 a 标签来定义导航链接 -->
 					<router-link :to="tab.url">{{tab.name}}</router-link>
 				</li>
@@ -88,7 +88,6 @@ export default {
 			tabs: [
 				{
 					url: '/index',
-					isActive: true,
 					name: '首页'
 				},
 				{

@@ -47,7 +47,7 @@
 			return {
 				isLoading: true,
 				user: {
-					img: 'static/images/logo/luffy.gif'
+					img: 'static/images/logo/logo.png'
 				},
 				flowers: [
 					{
