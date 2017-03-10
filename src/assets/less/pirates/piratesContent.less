@@ -1,0 +1,131 @@
+.pirates {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	z-index: 10;
+	background: rgba(255,255,255,.1);
+	height: 600px;
+	width: 60%;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -30%;
+
+	.animation-font {
+		position: relative;
+		height: 45px;
+		width: 75%;
+		min-width: 570px;
+		margin: 25px auto;
+		overflow: hidden;
+		font-size: 45px;
+		line-height: 45px;
+		color: #ecf0f1;
+		text-align: center;
+		.container {
+			font-weight: 600;
+			overflow: hidden;
+			height: 45px;
+			padding: 0 45px;
+			&:before {
+				content: '[';
+				left: 0;
+			}
+			&:after {
+				content: ']';
+				position: absolute;
+				right: 0;
+			}
+			&:after, &:before {
+				position: absolute;
+				top: 0;
+				color: #16a085;
+				font-size: 45px;
+				line-height: 45px;
+				animation-name: opacity;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+			.text {
+				display: inline;
+				float: left;
+				margin: 0;
+			}
+			.list {
+				margin-top: 0;
+				padding-left: 78%;
+				text-align: left;
+				animation-name: change;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				.item {
+					line-height: 50px;
+				}
+			}
+		}
+		@keyframes opacity {
+			0%, 100% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 1;
+			}
+		}
+		@keyframes change {
+			0%, 12.66%, 100% {
+				transform: translate3d(0, 0, 0);
+			}
+			16.66%, 29.32% {
+				transform: translate3d(0, -25%, 0);
+			}
+			33.32%,45.98% {
+				transform: translate3d(0, -50%, 0);
+			}
+			49.98%,62.64% {
+				transform: translate3d(0, -75%, 0);
+			}
+			66.64%,79.3% {
+				transform: translate3d(0, -50%, 0);
+			}
+			83.3%,95.96% {
+				transform: translate3d(0, -25%, 0);
+			}
+		}
+	}
+
+	.pirates-img {
+		width: 70%;
+		margin: 0 auto 30px;
+		height: 400px;
+		img {
+			border: 1px solid #fff;
+			padding: 1%;
+			width: 98%;
+			height: 98%;
+			transition: background-color 0.2s, border-color 0.2s;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.2);
+				border-color: rgba(255, 255, 255, 0.2);
+			}
+		}
+	}
+
+	.pirates-btn {
+		display: inline-block;
+		color: rgba(255, 255, 255, 0.7);
+		background-color: rgba(255, 255, 255, 0.08);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 0.3rem;
+		transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+		padding: 15px 40px;
+		margin: 0 10px;
+
+		&:hover {
+			text-decoration: none;
+			color: rgba(255, 255, 255, 0.8);
+			background-color: rgba(255, 255, 255, 0.2);
+			border-color: rgba(255, 255, 255, 0.3);
+		}
+	}
+}

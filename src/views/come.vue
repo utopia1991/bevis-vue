@@ -5,21 +5,25 @@
 <template>
 	<div>
 		<canvas id="flash"></canvas>
-		<div class="content">
-			<p class="content-title">Go Ocean Travel !</p>
-			<router-link to="/" class="pirates-btn">Go Back</router-link>
-		</div>
+		<piratesContent></piratesContent>
 	<div>
 </template>
 
 <script>
-	import SimplexNoise from '../assets/js/simplex.js';
+	import SimplexNoise from '../assets/js/simplex.js'
+	import piratesContent from '../components/piratesContent'
 
 	export default {
 		data() {
 			return {
-
+				img: {
+					src: 'static/images/heros/pirates.jpg',
+					alt: 'Straw Hat Pirate'
+				}
 			}
+		},
+		components: {
+			piratesContent
 		},
 		mounted() {
 			// Setup
