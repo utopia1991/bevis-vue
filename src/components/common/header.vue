@@ -7,9 +7,9 @@
 	<div class="header">
 		<div class="bar">
 			<span class="welcome">
-				<a href="/">请登录</a>
+				<router-link to="/come">Go Ocean</router-link>
 				<s>|</s>
-				<a href="/">免费注册</a>
+				<a href="/">Hand Flag</a>
 			</span>
 			<span class="userinfo">
 				<router-link to="/about">关于 One Piece</router-link>
