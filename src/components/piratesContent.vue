@@ -10,7 +10,7 @@
 					Straw Hat Pirate
 				</p>
 				<ul class="list">
-					<li class="item" v-for="list of lists">{{list.name}}</li>
+					<li class="item" v-for="list in lists">{{list.name}}</li>
 				</ul>
 			</div>
 		</div>
