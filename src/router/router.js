@@ -11,6 +11,7 @@ export default new VueRouter({
 		{ path: '/come', component: require('views/come') },
 		{ path: '/pirates', component: require('views/pirates') },
 		{ path: '/about', component: require('views/about') },
+		{ path: '/sky', component: require('views/sky') },
 		{ path: '/hero/:id', component: require('views/hero') }
 	]
 })

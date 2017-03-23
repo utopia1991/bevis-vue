@@ -7,13 +7,13 @@
 	<div class="header">
 		<div class="bar">
 			<span class="welcome">
-				<router-link to="/come">Go Ocean</router-link>
+				<router-link to="/come">Ocean</router-link>
 				<s>|</s>
-				<a href="/">Hand Flag</a>
+				<a href="/sky">Sky</a>
 			</span>
 			<span class="userinfo">
-				<router-link to="/about">关于 One Piece</router-link>
-				<a class="menu-link" href="https://github.com/utopia1991" target="_blank">关注我吧</a>
+				<router-link to="/about">One Piece</router-link>
+				<a class="menu-link" href="https://github.com/utopia1991" target="_blank">Follow Me</a>
 			</span>
 		</div>
 		<div class="main">
