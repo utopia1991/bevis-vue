@@ -5,18 +5,18 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm i
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-cd dist
-npm install -g http-server  # 该命令只需执行一次, 安装过之后, 以后就不需要重复安装了.
-hs  # 然后打开监听的ip就可以查看build之后的网站了
+npm i # install dependencies
 ```
 
-<!-- ![](static/img/demo/Bevis-Vue.jpg "首页") -->
+``` bash
+npm run dev # serve with hot reload at localhost:8080
+```
+
+``` bash
+npm run build # build for production with minification
+```
+
+``` bash
+cd dist
+hs # npm install -g http-server 该命令只需执行一次, 安装过之后, 以后就不需要重复安装了.
+```
